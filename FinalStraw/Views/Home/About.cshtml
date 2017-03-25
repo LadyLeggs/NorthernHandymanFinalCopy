@@ -1,7 +1,70 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿
+@{
+    ViewBag.Title = "About | TheNorthernHandyman";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row_about_header">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h1 class="section-heading ">About My Business...</h1>
+                <br />
+                <div class="col-lg-4 col-sm-6 text-left">
+                    The Northern Handyman is a home based buisness with over 30 years of experience.
+                    We have the capabilities to fill all your commercial or residential
+                    landscaping needs. This Business is centered around focusing on doing the job right the
+                    FIRST time while being safety conscious and curtious. The Northern Handyman is flexible to accommodate what works best
+                        for it's clients and with over 10 years of services provided, we always strive
+                        to make sure the customer is completely satisfied.
+                </div>              
+                    <div class="col-lg-4 col-sm-6 text-left">
+                          The Northern Handyman will go 
+                        beyond your summer season needs by providing you with affordable snow removal 
+                        services during the cold winter seasons.  We provide affordable all-year-round services Or just one
+                       time seasonal services. If needed we can haul away debris. We do not leave it lying around.
+                            We offer topsoil and provide seeding when necessary.
+                        </div>
+                <br />
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 text-left section-subheading text-muted">
 
-<p>Use this area to provide additional information.</p>
+                        <h3 class="section-subheading text-muted text-center "
+                            style=" margin-bottom: 5px;
+                        font-size:small">
+
+                            <strong>Location :</strong><br />
+                            N5043 Larry Rd.<br />
+                            New London, WI 54961<br />
+                            <abbr title="Phone"></abbr>
+                            <strong>Phone :</strong>920.277.5947
+                            <br />
+                            <strong>Email Me :</strong>
+                            <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a>
+                        </h3>
+                        <p text-left" style="font-size:small">
+                            Feel free to contact us for any services listed on our Services page. We are Fully
+                            insured and our company strongly believes in being enviornmentally friendly.
+                        </p>
+                    </div>
+                </div>
+
+                  
+                </div>
+            </div>       
+        <ul class="pager" 
+            style="background-color:transparent; 
+            border: 1px solid transparent;">
+            <li ><a href='@Url.Action("Index", "Home")' 
+                    style="background-color:transparent; 
+                    border: 1px solid transparent;">Home</a></li>
+            <li ><a href='@Url.Action("Services", "Home")' 
+                    style="background-color:transparent; 
+                    border: 1px solid transparent;">Next &rarr;</a></li>
+        </ul>
+        <hr />
+        </div> 
+    <img src="~/Images/Filler_ExtraImages/Equipment.jpg" width="100%" height="500px" />
+</section>
+

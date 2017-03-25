@@ -24,7 +24,10 @@ namespace FinalStraw
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.css", 
+                      "~/Content/4-col-portfolio.css",
+                      "~/Content/agency.css", 
+                      "~/Content/clean-blog.css",
                       "~/Content/site.css"));
         }
     }
