@@ -293,7 +293,7 @@ a
 }
 
 
-@media screen and (min-width:360px) {
+@media screen and (min-width:600px) {
     .intro-header {
         background-color: #777777;
         background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
