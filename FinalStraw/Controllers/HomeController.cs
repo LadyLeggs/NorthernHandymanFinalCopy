@@ -37,7 +37,7 @@ namespace FinalStraw.Controllers
                 var emailmessage = new System.Web.Mail.MailMessage()
                 {
                     Subject = e.Name,
-                    Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message,
+                    Body = "From: " + e.Name + "\n Phone Number: " + e.Phone + "\n Job Description: " + e.Message + "\n Email: " + e.Email,
                     From = "thenorthernhandyman@thenorthernhandyman.org",
                     To = "itismejody@gmail.com",
                     BodyFormat = MailFormat.Text,
@@ -47,7 +47,7 @@ namespace FinalStraw.Controllers
                 System.Web.Mail.SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
                 SmtpMail.Send(emailmessage);
                 MessageBox("Email sent successfully!");
-                return RedirectToAction("Index", "Home", null);
+                //return RedirectToAction("Index", "Home", null);
 
             }
 
