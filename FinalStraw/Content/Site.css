@@ -292,17 +292,9 @@ a
     padding: 25px;
 }
 
+.intro-header {
+   
+    background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
 
-@media screen and (min-width:600px) {
-    .intro-header {
-        background-color: #777777;
-        background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
-        background-image: no-repeat;
-        background-attachment: scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        margin-bottom: 50px;
-    }
+    width:100%;
 }
