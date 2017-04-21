@@ -1,56 +1,130 @@
 ﻿
-@{
-    ViewBag.Title = "Photos | TheNorthernHandyman";
-}
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                Photos
-                <small><a href='@Url.Action("Photos", "Home")'>Albums</a></small> |
-                @*<small><a href='@Url.Action("AllPhotos", "Home")'>All Photos</a></small>*@
-                <small><a href='@Url.Action("Videos", "Home")'>Videos</a></small> |
-            </h1>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
-    
-        
-        
-       
-    </div>
-    <br />
-  
-    <ul class="pager">
-        <li class="previous"><a href='@Url.Action("Index","Home")'>Home</a></li>
-        <li class="active">
-            <a href='@Url.Action("AllPhotos","Home")'>1</a>
-        </li>
-        <li>
-            <a href='@Url.Action("AllPhotosPg2","Home")'>2</a>
-        </li>
-        <li>
-            <a href='@Url.Action("AllPhotosPg3","Home")'>3</a>
-        </li>
-        <li>
-            <a href='@Url.Action("AllPhotosPg4","Home")'>4</a>
-        </li>
-        <li>
-            <a href='@Url.Action("AllPhotosPg5","Home")'>5</a>
-        </li>
-        <li>
-            <a href='@Url.Action("AllPhotosPg6","Home")'>6</a>
-        </li>
-        <li>
-            <a href='@Url.Action("AllPhotosPg7","Home")'>7</a>
-        </li>
-        
-        @*<li>
-            <a href="#">&raquo;</a>
-        </li>*@
-        @*<li class="next"><a href='@Url.Action("Videos", "Home")'>Videos </a></li>*@
-    </ul>
-</div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer" style="background-image: url('../../Images/Filler_ExtraImages/snow_forest.jpg'); ">
+            <h1>The Northern Handyman</h1>
+            <span class="subheading">               
+                    Snow | Tree Removal<br />
+                    Professional<br />
+                    Commercial<br />
+                    Residential<br />
+                </span>
+           
 
- 
+        </header>
+        <hr>
+        <div class="row col-lg-offset-2">
+            <p class="divide">
+                <strong>*SPECIAL*</strong>
+                Ask About our 10% Discount for Veterans and Senior Citizens! Or Our 20% for disabled.
+            </p>
+        </div>
+        <hr>
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Latest Features</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    
+                    <img src="~/Images/Filler_ExtraImages/grass_mowing.png" />
+                    <div class="caption">
+                        <h3>Mowing/Lawn Care</h3>
+                     
+                    <a href="#" class="btn btn-default">More Info</a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Landscaping</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Snow/Tree Removal</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
