@@ -54,9 +54,9 @@ namespace FinalStraw
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "208019169694498",
+               appSecret: "223f0001eaa9dd5c20453c3d2d0da9ba");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

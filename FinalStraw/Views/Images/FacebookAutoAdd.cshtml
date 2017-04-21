@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "FacebookAutoAdd";
+}
+
+<h2>FacebookAutoAdd</h2>
+
+
+<div class="fb-like"
+     data-share="true"
+     data-width="450"
+     data-show-faces="true">
+</div>
+
+
+
+
+<script>
+    FB.api(
+      '/me/photos',
+      'GET',
+      {},
+      function (response) {
+          // Insert your code here
+      }
+    );
+</script>
+
+
+

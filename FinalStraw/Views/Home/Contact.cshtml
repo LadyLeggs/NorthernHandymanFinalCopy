@@ -9,242 +9,216 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">
-                    <strong>Location :</strong><br />
-                    N5043 Larry Rd.<br />
-                    New London, WI 54961<br />
-                    <abbr title="Phone"></abbr>
-                    920.277.5947
-                    <br />
-                    <strong>Email Me :</strong>
-                    <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a>
-                    <br />
-                    <br />
-                        Contact Us for prices, more info, or a consultation by calling us, 
-                        texting us, or emailing us.<br />
-                        We look forward to hearing from you and providing you with our services!                 
-                </h3>           
-                </div>
-        </div>       
-        @using (Html.BeginForm("Contact", "Home", 
-            new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, 
-            new { @id = "contact-form", role = "form" }))
-        {
-            //@Html.ValidationSummary()
-            <fieldset>
-                <div class="form-div-1">
-                    <label class="name">
-                        @Html.TextBoxFor(m => m.Name, 
-                       new { @class = "form-control", placeholder = "Name *", required = "required" })
-                    </label>
-                </div>
-                <div class="form-div-2">
-                    <label class="email">
-                        @Html.TextBoxFor(m => m.Email, 
-                       new { @class = "form-control", placeholder = "Email *", required = "required" })
-                    </label>
-                </div>
-                <div class="form-div-3">
-                    <label class="phone">
-                        @Html.TextBoxFor(m => m.Phone, 
-                       new { @class = "form-control", placeholder = "Phone *", required = "required" })
-                    </label>
-                </div>
-                <div>
-                    <label class="message">
-                        @Html.TextAreaFor(m => m.Message,
-                       new { @class = "form-control job-description", placeholder = "Job Description",
-                           required = "required" })
-                    </label>
-                </div>
-                <div class="button-wrapper">
-                    <input type="submit" value="Send Email" name="submit" class="btn-success"> 
-                    <span class="btn-xs">* Required Fields</span>
-                </div>
-            </fieldset>
-
-        }
-        <div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    @*<div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" 
-                                       placeholder="Your Name *" 
-                                       id="name" 
-                                       required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" 
-                                       placeholder="Your Email *" 
-                                       id="email" 
-                                       required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" 
-                                       placeholder="Your Phone *" 
-                                       id="phone" 
-                                       required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" 
-                                          placeholder="Your Message *" 
-                                          id="message" 
-                                          required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Send Message</button>
-                        </div>                     
-                    </div>*@
-
-                    <ul class="pager">
-                        <li class="previous"><a href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
-                        <li class="next"><a href='@Url.Action("Index", "Home")'>Home</a></li>
-                    </ul>
-                </form>
-               
+         
             </div>
         </div>
-        <br />
-        <br />
-        <!-- End Contact Section -->
+        <div class="row ">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                @using (Html.BeginForm("Contact", "Home",
+    new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post,
+    new { @id = "contact-form", role = "form" }))
+                {
+                    //@Html.ValidationSummary()
+                    <field+set>
+                        <div class="form-div-1">
+                            <label class="name">
+                                @Html.TextBoxFor(m => m.Name,
+                       new { @class = "form-control", placeholder = "Name *", required = "required" })
+                            </label>
+                        </div>
+                        <div class="form-div-2">
+                            <label class="email">
+                                @Html.TextBoxFor(m => m.Email,
+                       new { @class = "form-control", placeholder = "Email *", required = "required" })
+                            </label>
+                        </div>
+                        <div class="form-div-3">
+                            <label class="phone">
+                                @Html.TextBoxFor(m => m.Phone,
+                       new { @class = "form-control", placeholder = "Phone *", required = "required" })
+                            </label>
+                        </div>
+                        <div>
+                            <label class="message">
+                                @Html.TextAreaFor(m => m.Message,
+                       new
+                       {
+                           @class = "form-control job-description",
+                           placeholder = "Job Description",
+                           required = "required"
+                       })
+                            </label>
+                        </div>
+                        <div class="button-wrapper">
+                            <input type="submit" value="Send Email" name="submit" class="btn-success">
+                            <span class="btn-xs">* Required Fields</span>
+                        </div>
+                    </field+set>
 
-        <!---Availible Locations--->
-        <div id="ContactText">
-            <div class="row ">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <strong class="Location">Primary Location: <br /></strong>
-                    <small class="Location">
-                        - New London, WI <br />
-                        - Three Lakes, WI<br />
-                    </small>
-                    <br />
-                    <strong class="Location"> We Also Serve The Fox Cities:<br /></strong>
-                    <small class="Location">
-                        - Appleton, WI<br />
-                        - Combined Locks, WI<br />
-                        - Kaukauna, WI<br />
-                        - Kimberly, WI<br />
-                        - Little Chute, WI<br />
+                }
+            </div>
 
-                        - Grand Chute, WI<br />
-                        - Greenville, WI<br />
-                    </small>
-                    <br />
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
-                    <small class="Location">
-                        - Northport, WI<br />
-                        - Sugar Bush, WI<br />
-                        - Royalton, WI<br />
-                        - Hortonville, WI<br />
-                        - Nowell, WI<br />
-                        - North Readfield, WI<br />
-                        - Stephensville, WI<br />
-                        - Little Wolf, WI<br />
-                        - Readfield, WI<br />
-                        - Shiocton, WI <br />
-                        - Dale, WI<br />
-                        - Bear Creek, WI<br />
-                    </small>
-                    <br />
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
-                    <small class="Location">
-
-                        -  Sugar Camp, WI<br />
-                        -  Eagle River, WI<br />
-                        -  Gagen, WI<br />
-                        -  Starks, WI<br />
-                        -  Hiles, WI<br />
-                        -  Roosevelt, WI<br />
-                        -  Newbold, WI<br />
-                    </small>
-                    <br />
-                </div>
-                </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <strong class="Location">Within 25 miles of New London:</strong><br />
-                    <small class="Location">
-                        - Black Creek, WI<br />
-                        - Freedom, WI<br />
-                        - Nichols, WI<br />
-                        - Seymour, WI<br />
-                        - Shiocton, WI<br />
-                        - Bear Creek, WI<br />
-                        - Big Falls, WI<br />
-                        - Clintonville, WI<br />
-                        - Dale, WI<br />
-                        - Embarrass, WI<br />
-                        - Fremont, WI<br />
-                        - Hortonville, WI<br />
-                        - Iola, WI<br />
-                    </small>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <strong class="Location">
-                         Within 25 Miles of Three Lakes:
-                    </strong><br />
-                    <small class="Location">
-                        - Three Lakes WI<br />
-                        - Eagle River, WI<br />
-                        - Argonne Forest, WI<br />
-                        - Phelps Vilas,	WI<br />
-                        - Rhinelander, WI<br />
-                        - Conover, WI<br />
-                        - Long Lake, WI<br />
-                        - Saint Germain, WI<br />
-                        - Mc Naughton, WI<br />
-                        - Lake Tomahawk,WI<br />
-                        - Crandon Forest, WI<br />
-                        - Star Lake, WI<br />
-                        - Pelican Lake, WI<br />
-                        - Sayner, WI<br />
-                    </small>
-                </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-                <strong class="Location"> Don't See Your City Listed?<br /></strong>
-                <small class="Location">
-                    We are more than happy to travel to the outlying areas for an additional fee to cover our travel costs.<br />
-                    <br />
-                    <strong class="Location">Contact Us For Details.<br /></strong>
-                </small>
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">
-                        <strong>Location :</strong><br />
+                <div class="col-lg-5 col-md-4 col-sm-6">
+                    <h3 class="section-subheading text-muted" style="text-align:center">
+                        <span class="glyphicon glyphicon-map-marker" style="color:#B07612"></span> <strong> Location :</strong><br />
                         N5043 Larry Rd.<br />
                         New London, WI 54961<br />
-                        <abbr title="Phone"></abbr>
+                        <span class="glyphicon glyphicon-earphone" style="color:#B07612"></span><abbr title="Phone"></abbr>
                         920.277.5947
                         <br />
-                        <strong>Email Me:</strong><br />
-                        <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a><br />
+                        <span class="glyphicon glyphicon-envelope" style="color:#B07612"></span><strong> Email Me :</strong>
+                        <br />
+                        <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a>
+                        <br />
+                        <br />
+                        Contact Us for prices, more info, or a consultation by calling us,
+                        texting us, or emailing us.<br />
+                        We look forward to hearing from you and providing you with our services!
                     </h3>
+                    </div>
+               
+            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form name="sentMessage" id="contactForm" novalidate>
+
+                                <ul class="pager">
+                                    <li class="previous"><a href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
+                                    <li class="next"><a href='@Url.Action("Index", "Home")'>Home</a></li>
+                                </ul>
+                            </form>
+
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <!-- End Contact Section -->
+                    <!---Availible Locations--->
+                    <div id="ContactText">
+                        <div class="row ">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <strong class="Location">Primary Location: <br /></strong>
+                                <small class="Location">
+                                    - New London, WI <br />
+                                    - Three Lakes, WI<br />
+                                </small>
+                                <br />
+                                <strong class="Location"> We Also Serve The Fox Cities:<br /></strong>
+                                <small class="Location">
+                                    - Appleton, WI<br />
+                                    - Combined Locks, WI<br />
+                                    - Kaukauna, WI<br />
+                                    - Kimberly, WI<br />
+                                    - Little Chute, WI<br />
+
+                                    - Grand Chute, WI<br />
+                                    - Greenville, WI<br />
+                                </small>
+                                <br />
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
+                                <small class="Location">
+                                    - Northport, WI<br />
+                                    - Sugar Bush, WI<br />
+                                    - Royalton, WI<br />
+                                    - Hortonville, WI<br />
+                                    - Nowell, WI<br />
+                                    - North Readfield, WI<br />
+                                    - Stephensville, WI<br />
+                                    - Little Wolf, WI<br />
+                                    - Readfield, WI<br />
+                                    - Shiocton, WI <br />
+                                    - Dale, WI<br />
+                                    - Bear Creek, WI<br />
+                                </small>
+                                <br />
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
+                                <small class="Location">
+
+                                    -  Sugar Camp, WI<br />
+                                    -  Eagle River, WI<br />
+                                    -  Gagen, WI<br />
+                                    -  Starks, WI<br />
+                                    -  Hiles, WI<br />
+                                    -  Roosevelt, WI<br />
+                                    -  Newbold, WI<br />
+                                </small>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <strong class="Location">Within 25 miles of New London:</strong><br />
+                                <small class="Location">
+                                    - Black Creek, WI<br />
+                                    - Freedom, WI<br />
+                                    - Nichols, WI<br />
+                                    - Seymour, WI<br />
+                                    - Shiocton, WI<br />
+                                    - Bear Creek, WI<br />
+                                    - Big Falls, WI<br />
+                                    - Clintonville, WI<br />
+                                    - Dale, WI<br />
+                                    - Embarrass, WI<br />
+                                    - Fremont, WI<br />
+                                    - Hortonville, WI<br />
+                                    - Iola, WI<br />
+                                </small>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <strong class="Location">
+                                    Within 25 Miles of Three Lakes:
+                                </strong><br />
+                                <small class="Location">
+                                    - Three Lakes WI<br />
+                                    - Eagle River, WI<br />
+                                    - Argonne Forest, WI<br />
+                                    - Phelps Vilas,	WI<br />
+                                    - Rhinelander, WI<br />
+                                    - Conover, WI<br />
+                                    - Long Lake, WI<br />
+                                    - Saint Germain, WI<br />
+                                    - Mc Naughton, WI<br />
+                                    - Lake Tomahawk,WI<br />
+                                    - Crandon Forest, WI<br />
+                                    - Star Lake, WI<br />
+                                    - Pelican Lake, WI<br />
+                                    - Sayner, WI<br />
+                                </small>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+                                <strong class="Location"> Don't See Your City Listed?<br /></strong>
+                                <small class="Location">
+                                    We are more than happy to travel to the outlying areas for an additional fee to cover our travel costs.<br />
+                                    <br />
+                                    <strong class="Location">Contact Us For Details.<br /></strong>
+                                </small>
+                                <div class="col-lg-12 text-center">
+                                    <h3 class="section-subheading text-muted">
+                                        <span class="glyphicon glyphicon-map-marker" style="color:#B07612"></span><strong>Location :</strong><br />
+                                        N5043 Larry Rd.<br />
+                                        New London, WI 54961<br />
+                                        <span class="glyphicon glyphicon-earphone" style="color:#B07612"></span><abbr title="Phone"></abbr>
+                                        920.277.5947
+                                        <br />
+                                        <span class="glyphicon glyphicon-envelope" style="color:#B07612"></span> <strong>Email Me:</strong><br />
+                                        <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a><br />
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pager">
+                        <li><a href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
+                        <li><a href='@Url.Action("Index", "Home")'>Home</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-            </div>
-        <ul class="pager">
-            <li><a href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
-            <li><a href='@Url.Action("Index", "Home")'>Home</a></li>
-        </ul>
-    </div>
 </section>
 <!--- End Availible Locations--->

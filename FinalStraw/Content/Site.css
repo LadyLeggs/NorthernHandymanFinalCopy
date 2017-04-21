@@ -7,6 +7,7 @@
     line-height: 20px;
 }
 
+
 @media screen and (min-width: 300px) {
     .navbar-brand {
         float: left;
@@ -198,6 +199,7 @@ a
 {
     color: white;
     background-color: #1e1b1b;
+    width:100%;
 }
     @media screen and (min-width: 300px) {
         .form-control {
@@ -292,9 +294,53 @@ a
     padding: 25px;
 }
 
-.intro-header {
-   
-    background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
+@media screen and (min-width:300px) {
+    h1{font-size:small;}
 
-    width:100%;
+}
+    .intro-header {
+        background-color: #777777;
+        background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
+        background-image: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        margin-bottom: 50px;
+    }
+
+/*@media screen and (min-width:600px) {
+    .intro-header {
+        background-color: #777777;
+        background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
+        background-image: no-repeat;
+        background-attachment: scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        margin-bottom: 50px;
+    }
+}*/
+
+
+{
+    left: 19px;
+    top: 984px;
+    position: absolute;
+    height: 191px;
+    width: 286px;
+    z-index: 96;
+    display: block;
+    opacity: 1.0;
+}
+footer
+ {
+    padding:0px;
+    margin:0px;
+}
+section 
+{
+    padding:50px;
 }
