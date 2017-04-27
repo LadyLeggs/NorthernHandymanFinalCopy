@@ -344,3 +344,7 @@ section
 {
     padding:50px;
 }
+.navbar-inverse {
+    background-color: black;
+    border-color: black;
+}
