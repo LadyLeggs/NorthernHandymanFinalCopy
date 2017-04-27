@@ -266,6 +266,7 @@
     <Content Include="Images\Filler_ExtraImages\seasons.jpg" />
     <Content Include="Images\Filler_ExtraImages\Snow.PNG" />
     <Content Include="Images\Filler_ExtraImages\snow_forest.jpg" />
+    <Content Include="Images\Filler_ExtraImages\Untitled.png" />
     <Content Include="Images\Filler_ExtraImages\winter-seasons.jpg" />
     <Content Include="Images\Filler_ExtraImages\WisconsinMap.png" />
     <Content Include="Images\Filler_ExtraImages\YouTube_Play_Button.jpg" />
@@ -376,13 +377,6 @@
     <Content Include="Views\Home\Tree_Removal.cshtml" />
     <Content Include="Views\Home\Trimming.cshtml" />
     <Content Include="Views\Home\AllPhotos.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg2.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg3.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg4.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg5.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg6.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg7.cshtml" />
-    <Content Include="Views\Home\AllPhotosPg8.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
     <Content Include="Views\Images\FacebookAutoAdd.cshtml" />
   </ItemGroup>

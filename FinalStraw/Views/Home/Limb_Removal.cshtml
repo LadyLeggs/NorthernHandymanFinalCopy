@@ -13,30 +13,59 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                Image Gallery
-                    <small>Limb Removal</small>
+                    <a href='@Url.Action("Photos", "Home")'>Albums</a>
+                    <small>| Limb Removal |</small>
                 </h1>
             </div>
         </div>
         <!-- /.row -->
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemoval1.jpg" />
+            <div class="col-sm-3 col-xs-6 portfolio-item">
+                <a href="#portfolioModal1"
+                   class="portfolio-link"
+                   data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemoval1.jpg"
+                         style="height: 210px; width: 280px" />
                 </a>
             </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemovalCleanUp1.jpg" />
+
+            <div class="col-sm-3 col-xs-6 portfolio-item">
+                <a href="#portfolioModal2"
+                   class="portfolio-link"
+                   data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemovalCleanUp1.jpg"
+                         style="height: 210px; width: 280px" />
                 </a>
             </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemoval.jpg" />
+            <div class="col-sm-3 col-xs-6 portfolio-item">
+                <a href="#portfolioModal3"
+                   class="portfolio-link"
+                   data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemoval.jpg"
+                         style="height: 210px; width: 280px" />
                 </a>
             </div>
         </div>
+
+    </div> 
+           
+           
         <!-- /.row -->
         <hr />
         <!-- Pagination -->
@@ -71,3 +100,89 @@
         <!-- /.row -->  
 </body>
 
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal1"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->                            
+                            <img class="img-responsive img-centered" src="~/Images/LimbRemoval/LimbRemoval1.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal2"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="~/Images/LimbRemoval/LimbRemovalCleanUp1.jpg" />
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal3"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive" src="~/Images/LimbRemoval/LimbRemoval.jpg"/>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
