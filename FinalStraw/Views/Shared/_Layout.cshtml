@@ -7,94 +7,101 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-
+@RenderBody()
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("THE NORTHERN HANDYMAN", "Index", "Home", new { area = "" },
-               new { @class = "navbar-brand" })
+            @* Moblie Menu Button Coding *@
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse"
+                          data-target=".navbar-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+              
+              @* End of Moblie Menu Button Coding *@
+                  </button>
+              
+                  @Html.ActionLink("THE NORTHERN HANDYMAN", "Index", "Home", new { area = "" },
+                 new { @class = "navbar-brand" })
+               
             </div>
+           
+
+            @* Nav-Bar Layout across page code *@ 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-               
-               
+                    
+            @* Buttons *@
                     <li class="active">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Services", "Services", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         <li>@Html.ActionLink("Photos", "Photos", "Home")</li>
                         <li>@Html.ActionLink("Videos", "Videos", "Home")</li>
+
+               @*Drop-down Button *@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-expanded="false">More<span class="caret"></span></a>
+                           aria-expanded="false">More
+                        @* Down arrow *@ <span class="caret"></span></a>
+
+              @* Items inside the Drop down *@
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="https://www.facebook.com/NorthernHandyman/">
                                     Find Us On Facebook
                                 </a>
                             </li>
-                            <li class="divider"></li>
+                        <li class="divider"></li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UChXDFd0JzBEE8p3rWqmUDKQ">
                                     Find Our Videos On Youtube
                                 </a>
                             <li class="divider"></li>
                         </ul>
+
+               @* End of Drop Down *@ 
                     </li>
                     </ul>
-
-            </div>
+                </div>
+            @* End Of Container *@
         </div>
-</nav>
+        @* End of Nab-Bar *@
+    </nav>
 
-    @RenderBody()
-    <footer>       
-        <section id="sp-footer-navigation" style="background-color:black">
-            <div class="container">
+@* Footer *@
+    <footer style="background-color:black">
+        
+    @* Logo Colum *@
+       <div class="container">
                 <div class="row">
-                    <div id="sp-footer1" class="col-sm-5 col-md-4">
-                        <div class="sp-column ">
-                            <div class="sp-module ">
-                                <div class="sp-module-content">
-                                    <div class="custom">
-                                        <div class="site-info">
-                                            <br />
-                                    
-                                            <div class="award">
-                                                <a class="expertise-award cleanslate" style="background-color:transparent!important; border:0px!important;" 
-                                                   href="https://www.facebook.com/NorthernHandyman/" target="_blank">
-                                                    <span class="laurels" style="font-size:36px!important;">
-                                                        <img src="~/Images/Filler_ExtraImages/Untitled.png" style="width: 90% !important;"/>
-                                                        </span>
-                                                    </a>
-                                                <br />
-                                                <br />
-                                                <h3 class="footer-title" style="color:white">+30yrs OF EXPERIENCE</h3>
-                                               
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div  class="col-sm-5 col-md-4">
+                       <br />
+
+                    @* Personalized Logo Hyper-Linked to Facebook *@
+                            <a href="https://www.facebook.com/NorthernHandyman/">
+                               <img src="~/Images/Filler_ExtraImages/Untitled.png" style="width: 90% !important;"/>
+                            </a>
+                            <br />
+                            <br />
+
+                        @*Bottom Header*@
+                            <h3 style="color:white">+30yrs OF EXPERIENCE</h3>
+
+     @* End Of Logo Colum *@
                     </div>
+           
+     @* UseFul Links Colum *@
+                    <div class="col-sm-6 col-md-4">                       
+                                <br />
+                                <br />
+                                <br />
 
+                    @* Link-Header *@
+                        <h2 style="color:white">Useful Links</h2>
 
-                    <div id="sp-footer2" class="col-sm-6 col-md-4">
-                        <div class="sp-column ">
-                            <div class="sp-module _menu">
-                                <br />
-                                <br />
-                                <br />
-                                <h2 class="sp-module-title" style="color:white">Useful Links</h2><div class="sp-module-content">
+                              @* Vertical Nav-List *@
                                     <ul class="nav menu">
                                         <li class="item-121"><a href="/">Home</a></li>
                                         <li>@Html.ActionLink("About", "About", "Home")</li>
@@ -102,67 +109,84 @@
                                         <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                                         <li class="item-126"><a href="/login">Login</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
+
+      @*End of Useful Link Colum*@   
                     </div>
-                    
-                    <div id="sp-footer3" class="col-sm-6 col-md-4">
-                        <div class="sp-column ">
-                            <div class="sp-module ">
-                                <div class="sp-module-content">
-                                    <div class="custom">
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <h2 class="footer-title" style="color:white;"> Contact</h2>
-                                        <div class="contact-detail">
-                                            <span class="glyphicon glyphicon-map-marker" style="color:white"> </span>
-                                                N5043 Larry Rd.
-                                                New London, WI 54961<br />
-                                            <br />
-                                            <span class="glyphicon glyphicon-envelope" style="color:white">
-                                            </span> <a href="mailto:TheNorthernHandyman@gmail.com"> TheNorthernHandyman@gmail.com</a>
-                                            <br />
-                                            <br />
-                                            <span class="glyphicon glyphicon-phone" style="color:white"></span> (920) 277-4947
-                                            <br />
-                                        </div>
-                                    </div>
-                                </div>
+
+      @* Contact Us Colum *@ 
+                    <div class="col-sm-6 col-md-4">
+
+                        @*Spacing*@  
+                                 <br />
+                                 <br />
+                                 <br />
+
+            @* Contact Us-Header *@
+                                 <h2  style="color:white;"> Contact Us </h2>
+
+                        @* Location icon/ Address *@      
+                                     <span class="glyphicon glyphicon-map-marker" style="color:white"> </span>
+                                         N5043 Larry Rd.
+                                         New London, WI 54961<br />
+                                     <br />
+
+                        @*Mail Icon / Email Address*@
+                                     <span class="glyphicon glyphicon-envelope" style="color:white">
+                                     </span> <a href="mailto:TheNorthernHandyman@gmail.com"> TheNorthernHandyman@gmail.com</a>
+                                     <br />
+                                     <br />
+
+                        @* Phone Icon / Phone Number *@
+                           <span class="glyphicon glyphicon-phone" style="color:white"></span> (920) 277-4947
+                           <br />                      
+                                    
+                        @* Connect US Header *@
+                            <div >
+                                <h3 class="footer-title" style="color:white">
+                                    Connect With Us!
+                                </h3>
+
+                            @*Facebook Icon*@
+                                        <a href="https://www.facebook.com/NorthernHandyman/">
+                                            <span class="glyphicon glyphicon-user" 
+                                                  style="font-size:x-large; 
+                                                  background-color:white; 
+                                                  line-height:2; 
+                                                  border-radius:50%; 
+                                                  width:50px; 
+                                                  height:50px;">
+                                            </span>
+                                        </a>
+               
+            @* End of Contact Us Header *@
                             </div>
 
-                            <div class="connect-with-us">
-                                <h3 class="footer-title" style="color:white">Connect With Us!</h3>
-                                <a href="https://www.facebook.com/NorthernHandyman/">
-                                    <span class="glyphicon glyphicon-user" style="font-size:x-large; background-color:white; line-height:2; border-radius:50%; width:50px; height:50px;"></span>
-                                </a>
-
-                            </div>
-                        </div>
+      @*End of Contact Us Colum*@
                     </div>
+
+           @* End Of Row *@
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div id="sp-copyright" style="text-align:center" class="col-sm-12 col-md-12">
+
+           @* New Row - CopyRight Ending *@
+                <div class="row">
+                        <div style="text-align:center" class="col-sm-12 col-md-12">
                             <br />
                             <br />
-                           
-                            <div class="sp-column ">
-                                <p> @DateTime.Now.Year -  | TheNorthernHandyman | Snow | Tree Removal | Brush Removal
-                                | Brush Hogging | Fire Wood | Limb Removal | Mowing | Stump Grinding | Trimming | Professional
-                                | Commercial |
-                                <br />
-                                Township of New London - Wauapaca County Wisconsin 54961<br />
-                                Township of Three Lakes - Oneida County Wisconsin 54562
+                                <p>
+                                    @DateTime.Now.Year - |  
+                                    TheNorthernHandyman | Snow | Tree Removal | Brush Removal | Brush Hogging |
+                                    Fire Wood | Limb Removal | Mowing | Stump Grinding | Trimming | Professional | Commercial |
+                                    <br />
+                                    Township of New London - Wauapaca County Wisconsin 54961<br />
+                                    Township of Three Lakes - Oneida County Wisconsin 54562
                                 </p>
-                                
-                            </div>
                         </div>
+            @* End of Row *@
                     </div>
-                </div>
+
+    @*End of Container*@
         </div>
-        </section>
+@* End of Footer *@   
     </footer>
    
 
