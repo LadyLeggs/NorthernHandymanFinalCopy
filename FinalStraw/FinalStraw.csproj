@@ -379,6 +379,9 @@
     <Content Include="Views\Home\AllPhotos.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
     <Content Include="Views\Images\FacebookAutoAdd.cshtml" />
+    <Content Include="Views\Home\Tree_Removal_Index.cshtml" />
+    <Content Include="Views\Home\Mowing_Index.cshtml" />
+    <Content Include="Views\Home\Stump_Grinding_Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

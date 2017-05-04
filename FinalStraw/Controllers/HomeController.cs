@@ -104,15 +104,15 @@ namespace FinalStraw.Controllers
         {
             return View();
         }
-        public ActionResult AllPhotosPg2()
+        public ActionResult Tree_Removal_Index()
         {
             return View();
         }
-        public ActionResult AllPhotosPg3()
+        public ActionResult Mowing_Index()
         {
             return View();
         }
-        public ActionResult AllPhotosPg4()
+        public ActionResult Stump_Grinding_Index()
         {
             return View();
         }
