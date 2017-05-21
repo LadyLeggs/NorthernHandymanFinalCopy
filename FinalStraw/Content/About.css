@@ -1,0 +1,17 @@
+﻿
+#AboutLogo {
+    width: 100%;
+    
+}
+#AboutPager {
+    background-color:transparent; 
+    border: transparent;
+    
+}
+#LowerPageLocation {
+    margin-bottom: 5px; 
+    font-size:small
+}
+#AboutFooterImage {
+    width:100%;
+}

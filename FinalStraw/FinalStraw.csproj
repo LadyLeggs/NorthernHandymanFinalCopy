@@ -217,12 +217,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\4-col-portfolio.css" />
+    <Content Include="Content\About.css" />
     <Content Include="Content\agency.css" />
     <Content Include="Content\agency.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\clean-blog.css" />
     <Content Include="Content\clean-blog.min.css" />
+    <Content Include="Content\Contact.css" />
+    <Content Include="Content\Index.css" />
+    <Content Include="Content\LayOut.css" />
+    <Content Include="Content\Services.css" />
     <Content Include="Content\thumbnail-gallery.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -256,6 +261,8 @@
     <Content Include="Images\Filler_ExtraImages\grass_mowing.png" />
     <Content Include="Images\Filler_ExtraImages\home-bg.jpg" />
     <Content Include="Images\Filler_ExtraImages\InGroundedStump.jpg" />
+    <Content Include="Images\Filler_ExtraImages\Logo.png" />
+    <Content Include="Images\Filler_ExtraImages\Logoclear.png" />
     <Content Include="Images\Filler_ExtraImages\map-image.png" />
     <Content Include="Images\Filler_ExtraImages\MountainTops.jpg" />
     <Content Include="Images\Filler_ExtraImages\MowingScape.PNG" />
@@ -267,6 +274,7 @@
     <Content Include="Images\Filler_ExtraImages\Snow.PNG" />
     <Content Include="Images\Filler_ExtraImages\snow_forest.jpg" />
     <Content Include="Images\Filler_ExtraImages\Untitled.png" />
+    <Content Include="Images\Filler_ExtraImages\Untitled.Resized.png" />
     <Content Include="Images\Filler_ExtraImages\winter-seasons.jpg" />
     <Content Include="Images\Filler_ExtraImages\WisconsinMap.png" />
     <Content Include="Images\Filler_ExtraImages\YouTube_Play_Button.jpg" />

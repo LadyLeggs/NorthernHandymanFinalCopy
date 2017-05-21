@@ -1,0 +1,16 @@
+﻿
+section#contact {
+    background-image: url('../Images/Filler_ExtraImages/map-image.png');
+   
+}
+#ContactLocation{
+    color:white;
+}
+#ContactIcons {
+    color: #B07612
+}
+#ContactPager {
+    background-color: transparent;
+    border: transparent;
+    color:white
+}

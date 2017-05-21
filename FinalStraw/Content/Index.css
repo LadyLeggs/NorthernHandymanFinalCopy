@@ -1,0 +1,28 @@
+﻿
+
+/*Top of the Page*/
+#HomeHeader {
+    background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG') ;
+    width:100%;
+    background-repeat:no-repeat;
+}
+
+
+/*Main Body */
+#jumbotronHP 
+{
+   background-color:transparent
+}
+.HpServiceInfo 
+{
+    margin-top:20px;
+}
+.HpServiceImage 
+{
+    height: 100%; width: 100%
+}
+/*Bottom Of the Page*/
+
+/*Footer*/
+
+/*Used all Over*/

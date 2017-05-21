@@ -1,17 +1,28 @@
 ﻿@model TheNorthernHandyman.Models.ContactEmailModels
+@Styles.Render("~/Content/Contact.css")
 
 @{
     ViewBag.Title = "Contact | TheNorthernHandyman";
 }
 <!-- Contact Section -->
-<section id="contact" pading:80px  style="padding:80px">
+<section id="contact" >
+
+<!--Container-->
     <div class="container">
+
+    <!--Row-->
         <div class="row">
+
+        <!--Main HEADER-->
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>
-         
+                <h2 class="section-heading">Contact Us</h2>         
             </div>
+        <!--/Main HEADER-->
+
         </div>
+    <!--/Row-->
+
+    <!--New Row / Contact Form-->
         <div class="row ">
             <div class="col-lg-4 col-md-4 col-sm-6">
                 @using (Html.BeginForm("Contact", "Home",
@@ -60,13 +71,24 @@
 
                 <div class="col-lg-5 col-md-4 col-sm-6">
                     <h3 class="section-subheading text-muted" style="text-align:center">
-                        <span class="glyphicon glyphicon-map-marker" style="color:#B07612"></span> <strong> Location :</strong><br />
-                        N5043 Larry Rd.<br />
-                        New London, WI 54961<br />
-                        <span class="glyphicon glyphicon-earphone" style="color:#B07612"></span><abbr title="Phone"></abbr>
+                        <span id="ContactIcons" 
+                              class="glyphicon glyphicon-map-marker">
+                        </span> 
+
+                        <strong> Location :</strong>
+                        <br />
+                            N5043 Larry Rd.<br />
+                            New London, WI 54961<br />
+                        <span id="ContactIcons" 
+                              class="glyphicon glyphicon-earphone">
+                        </span>
+                        <strong> Phone :</strong>
                         920.277.5947
                         <br />
-                        <span class="glyphicon glyphicon-envelope" style="color:#B07612"></span><strong> Email Me :</strong>
+                        <span id="ContactIcons" 
+                              class="glyphicon glyphicon-envelope">
+                        </span>
+                        <strong> Email Me :</strong>
                         <br />
                         <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a>
                         <br />
@@ -78,25 +100,28 @@
                     </div>
                
             </div>
-                    <div class="row">
+    <!--/New Row / Contact Form-->
+
+            <!--Row-->
+                <div class="row">
                         <div class="col-lg-12">
-                            <form name="sentMessage" id="contactForm" novalidate>
-
-                                <ul class="pager">
-                                    <li class="previous"><a href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
-                                    <li class="next"><a href='@Url.Action("Index", "Home")'>Home</a></li>
-                                </ul>
-                            </form>
-
+                            <form name="sentMessage" id="contactForm" novalidate></form>
                         </div>
+                    <ul class="pager">
+                        <li class="previous"><a id="ContactPager" href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
+                        <li class="next"><a id="ContactPager" href='@Url.Action("Index", "Home")'>Home</a></li>
+                    </ul>
                     </div>
+            <!--/Row-->
                     <br />
                     <br />
-                    <!-- End Contact Section -->
-                    <!---Availible Locations--->
-                    <div id="ContactText">
+            <!-- End Contact Section -->
+
+            <!---Availible Locations--->
+                    <div id="ContactLocation">
                         <div class="row ">
                             <div class="col-lg-4 col-md-4 col-sm-6">
+                            <!--Primary Location-->
                                 <strong class="Location">Primary Location: <br /></strong>
                                 <small class="Location">
                                     - New London, WI <br />
@@ -115,7 +140,10 @@
                                     - Greenville, WI<br />
                                 </small>
                                 <br />
+                            <!--/Primary Location-->
                             </div>
+
+                        <!--Local Towns-->
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
                                 <small class="Location">
@@ -133,11 +161,13 @@
                                     - Bear Creek, WI<br />
                                 </small>
                                 <br />
+                        <!--/Local Towns New London-->
                             </div>
+
+                        <!--Local Towns Three Lakes-->
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
                                 <small class="Location">
-
                                     -  Sugar Camp, WI<br />
                                     -  Eagle River, WI<br />
                                     -  Gagen, WI<br />
@@ -148,8 +178,12 @@
                                 </small>
                                 <br />
                             </div>
+                    <!--/Local Towns Three Lakes-->
                         </div>
+
+                    <!--New Row-->
                         <div class="row">
+                        <!--Within 25miles New London-->
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <strong class="Location">Within 25 miles of New London:</strong><br />
                                 <small class="Location">
@@ -167,7 +201,10 @@
                                     - Hortonville, WI<br />
                                     - Iola, WI<br />
                                 </small>
+                        <!--/Within 25miles New London-->
+
                             </div>
+                        <!--Within 25miles Three Lakes-->
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <strong class="Location">
                                     Within 25 Miles of Three Lakes:
@@ -191,34 +228,57 @@
                             </div>
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-                                <strong class="Location"> Don't See Your City Listed?<br /></strong>
-                                <small class="Location">
-                                    We are more than happy to travel to the outlying areas for an additional fee to cover our travel costs.<br />
+                            <br />                            
+                        <!--/Within 25 Miles of Three Lakes-->
+
+                        <!--Don't See Your City Listed?-->
+                            <div class="col-lg-3 col-md-4 col-sm-6 ">
+                                <strong> Don't See Your City Listed?<br /></strong>
+                                <small>
+                                    We are more than happy to travel to the outlying areas
+                                    for an additional fee to cover our travel costs.<br />
                                     <br />
-                                    <strong class="Location">Contact Us For Details.<br /></strong>
                                 </small>
+                                    <strong>Contact Us For Details.<br /></strong>                                
+                            <!--/Don't See Your City Listed?-->
+
+                            <!--Contact InFo-->
                                 <div class="col-lg-12 text-center">
                                     <h3 class="section-subheading text-muted">
-                                        <span class="glyphicon glyphicon-map-marker" style="color:#B07612"></span><strong>Location :</strong><br />
-                                        N5043 Larry Rd.<br />
-                                        New London, WI 54961<br />
-                                        <span class="glyphicon glyphicon-earphone" style="color:#B07612"></span><abbr title="Phone"></abbr>
+                                        <span id="ContactIcons" class="glyphicon glyphicon-map-marker"></span>
+                                            <strong>Location :</strong><br />
+                                                N5043 Larry Rd.<br />
+                                                New London, WI 54961<br />
+                                        <span id="ContactIcons" class="glyphicon glyphicon-earphone"></span>
+                                            <abbr title="Phone"></abbr>
                                         920.277.5947
                                         <br />
-                                        <span class="glyphicon glyphicon-envelope" style="color:#B07612"></span> <strong>Email Me:</strong><br />
+                                        <span id="ContactIcons" class="glyphicon glyphicon-envelope"></span> 
+                                            <strong>Email Me:</strong><br />
                                         <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a><br />
                                     </h3>
+                            <!--/Contact InFo -->
                                 </div>
+                            
                             </div>
+                            <!--/New Row-->
                         </div>
+                 <!--/#ContactLocation-->
+
                     </div>
+
+        <!--Buttons-->
                     <ul class="pager">
-                        <li><a href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
-                        <li><a href='@Url.Action("Index", "Home")'>Home</a></li>
+                        <li><a id="ContactPager"href='@Url.Action("Services", "Home")'>&larr; Previous</a></liid="ContactPager">
+                        <li><a id="ContactPager"href='@Url.Action("Index", "Home")'>Home</a></li>
                     </ul>
+        <!--/Buttons-->
+
+        <!--/Container-->
+
                 </div>
+
+<!--/Container-->
+
 </section>
-<!--- End Availible Locations--->
+<!-- /Contact Section -->

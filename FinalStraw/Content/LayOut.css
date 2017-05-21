@@ -1,0 +1,45 @@
+﻿
+/*Top of the Page*/
+.navbar-inverse{
+    background-color:black
+}
+/*Main Body */
+
+/*Bottom Of the Page*/
+
+/*Footer*/
+footer {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+#FooterLogo {
+    width: 90%;
+}
+#LogoTag {
+    color: white
+}
+#ColumHeader{
+    color: white
+}
+#ContactIcons {
+    color: #B07612
+}
+#Facebook {
+    font-size:x-large; 
+    background-color:white;
+    line-height: 2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+/*Used all Over*/
+body {
+    background-color: #c3c388
+}
+a {
+    color: #B07612;
+}
+    a img:hover, a img:focus {
+        cursor: pointer;
+    }

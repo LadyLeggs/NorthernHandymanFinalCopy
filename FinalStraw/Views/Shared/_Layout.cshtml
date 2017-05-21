@@ -6,7 +6,9 @@
     <meta name="description" content= @ViewBag.Description/>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
+
 @RenderBody()
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,7 +31,7 @@
            
 
             @* Nav-Bar Layout across page code *@ 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     
             @* Buttons *@
@@ -71,7 +73,7 @@
     </nav>
 
 @* Footer *@
-    <footer style="background-color:black">
+    <footer>
         
     @* Logo Colum *@
        <div class="container">
@@ -81,13 +83,13 @@
 
                     @* Personalized Logo Hyper-Linked to Facebook *@
                             <a href="https://www.facebook.com/NorthernHandyman/">
-                               <img src="~/Images/Filler_ExtraImages/Untitled.png" style="width: 90% !important;"/>
+                               <img id="FooterLogo" src="~/Images/Filler_ExtraImages/Untitled.png" />
                             </a>
                             <br />
                             <br />
 
                         @*Bottom Header*@
-                            <h3 style="color:white">+30yrs OF EXPERIENCE</h3>
+                            <h3 id="LogoTag">+30yrs OF EXPERIENCE</h3>
 
      @* End Of Logo Colum *@
                     </div>
@@ -99,7 +101,7 @@
                                 <br />
 
                     @* Link-Header *@
-                        <h2 style="color:white">Useful Links</h2>
+                        <h2 id="ColumHeader">Useful Links</h2>
 
                               @* Vertical Nav-List *@
                                     <ul class="nav menu">
@@ -122,44 +124,38 @@
                                  <br />
 
             @* Contact Us-Header *@
-                                 <h2  style="color:white;"> Contact Us </h2>
+                        <h2 id="ColumHeader"> Contact Us </h2>
 
                         @* Location icon/ Address *@      
-                                     <span class="glyphicon glyphicon-map-marker" style="color:white"> </span>
+                                     <span id="ContactIcons" class="glyphicon glyphicon-map-marker"> </span>
                                          N5043 Larry Rd.
                                          New London, WI 54961<br />
                                      <br />
 
                         @*Mail Icon / Email Address*@
-                                     <span class="glyphicon glyphicon-envelope" style="color:white">
-                                     </span> <a href="mailto:TheNorthernHandyman@gmail.com"> TheNorthernHandyman@gmail.com</a>
+                        <span id="ContactIcons" class="glyphicon glyphicon-envelope">
+                        </span> <a TheNorthernHandyman@gmail.com"> TheNorthernHandyman@gmail.com</a>
                                      <br />
                                      <br />
 
                         @* Phone Icon / Phone Number *@
-                           <span class="glyphicon glyphicon-phone" style="color:white"></span> (920) 277-4947
+                        <span id="ContactIcons" class="glyphicon glyphicon-phone"></span> (920) 277-4947
                            <br />                      
                                     
                         @* Connect US Header *@
                             <div >
-                                <h3 class="footer-title" style="color:white">
+                                <h3 id="ColumHeader">
                                     Connect With Us!
-                                </h3>
+                                    </h3>
 
-                            @*Facebook Icon*@
-                                        <a href="https://www.facebook.com/NorthernHandyman/">
-                                            <span class="glyphicon glyphicon-user" 
-                                                  style="font-size:x-large; 
-                                                  background-color:white; 
-                                                  line-height:2; 
-                                                  border-radius:50%; 
-                                                  width:50px; 
-                                                  height:50px;">
-                                            </span>
-                                        </a>
-               
-            @* End of Contact Us Header *@
-                            </div>
+                                    @*Facebook Icon*@
+                                    <a href="https://www.facebook.com/NorthernHandyman/">
+                                        <span id="Facebook" class="glyphicon glyphicon-user">
+                                        </span>
+                                    </a>
+
+                                    @* End of Contact Us Header *@
+</div>
 
       @*End of Contact Us Colum*@
                     </div>

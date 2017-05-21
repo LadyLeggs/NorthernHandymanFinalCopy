@@ -1,5 +1,5 @@
 ﻿
-.navbar-brand
+/*.navbar-brand
  {
     float: left;
     padding: 15px 55px;
@@ -7,11 +7,10 @@
     line-height: 20px;
 }
 
-
 @media screen and (min-width: 300px) {
     .navbar-brand {
         float: left;
-        /*padding: 15px 55px;*/
+        padding: 15px 55px;
         font-size: 30px;
         line-height: 20px;
     }
@@ -26,53 +25,25 @@
         min-height: 70px;
     }
 }
+
 hr.small {
     max-width: 400px;
     margin: 15px auto;
     border-width: 4px;
     border-color: #fff;
 }
-    @media screen and (min-width: 300px) {
-        hr.small {
-            max-width: 400px;
-            margin: 15px auto;
-            border-width: 4px;
-            border-color: #fff;
-        }
-    }
+
 .btn-primary
 {
     
-
    border-color: #987D20;
 }
-    @media screen and (min-width: 300px) {
-        .btn-primary {
-    
-            border-color: #987D20;
-        }
-    }
+
 .btn-primary:hover
 {
     background-color:  #987D20;
       border-color:#f6bf01
 }
-    @media screen and (min-width: 300px) {
-        .btn-primary:hover {
-            background-color: #987D20;
-            border-color: #f6bf01;
-        }
-    }
-
-/*.intro-header
- {
-    margin-bottom: -10px;
-}
-    @media screen and (min-width: 300px) {
-        .intro-header {
-            margin-bottom: -10px;
-        }
-    }*/
 
 .section-heading-spacer 
 {
@@ -80,13 +51,7 @@ hr.small {
     width: 200px;
     border-top: 3px solid #669999;
 }
-    @media screen and (min-width: 300px) {
-        .section-heading-spacer {
-            float: left;
-            width: 200px;
-            border-top: 3px solid #669999;
-        }
-    }
+
 hr.section-heading-spacer_Equip
   {
             float: left;
@@ -100,25 +65,12 @@ hr.section-heading-spacer_Equip
      width: 1253px;
    margin-top:50px;
 }
-    @media screem and (min-width: 300px) {
-        .about {
-            border-top: 1px solid #1e1a1a;
-            margin-bottom: 50px;
-            width: 1253px;
-            margin-top: 50px;
-        }
-    }
+
 .row_about_header
  {
     margin-right: -210px;
     margin-left: -183px;
 }
-    @media screen and (min-width: 300px) {
-        .row_about_header {
-            margin-right: -210px;
-            margin-left: -183px;
-        }
-    }
 
 .pagination > .active > a, .pagination >
  .active > span, .pagination > .active >
@@ -132,17 +84,6 @@ hr.section-heading-spacer_Equip
     background-color: transparent;
     border-color:  transparent;
 }
-    @media screen and (min-width: 300px) {
-        .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover,
-        .pagination > .active > a:focus, .pagination > .active > span:focus {
-            z-index: 2;
-            color: black;
-            cursor: pointer;
-            background-color: transparent;
-            border-color: transparent;
-        }
-    }
-
 
 .pagination > li > a, .pagination > li > span 
 {
@@ -150,128 +91,59 @@ hr.section-heading-spacer_Equip
     background-color: transparent;
     border-color:transparent ;
 }
-    @media screen and (min-width: 300px) {
-        .pagination > li > a, .pagination > li > span {
-            background-color: transparent;
-            border-color: transparent;
-        }
-    }
-
-a img:hover, a img:focus 
-{
-    cursor: pointer;
-}
-    @media screena and (min-width: 300px) {
-        img:hover, a img:focus {
-            cursor: pointer;
-        }
-    }
-section#contact 
-{   
-    background-image: url('../Images/Filler_ExtraImages/map-image.png');
-  
-}
-    @media screen and (min-width: 300px) {
-        section#contact {
-            background-image: url('../Images/Filler_ExtraImages/map-image.png');
-        }
-    }
-a 
-{
-    color: #B07612;
-}
-    @media screen and (min-width: 300px) {
-        a {
-            color: #B07612;
-        }
-    }
 
 .Location 
 {
     color: #f2e5e1;
 }
-    @media screen and (min-width: 300px) {
-        .Location {
-            color: #f2e5e1;
-        }
-    }
+
 .form-control
 {
     color: white;
     background-color: #1e1b1b;
     width:100%;
 }
-    @media screen and (min-width: 300px) {
-        .form-control {
-            color: white;
-            background-color: #1e1b1b;
-        }
-    }
+
 #about
  {
     padding: 0px 0;
 }
-    @media screen and (min-width: 300px) {
-        #about {
-            padding: 0px 0;
-        }
-    }
+
 .section-heading 
 {
     margin-bottom:30px;
 }
-    @media screen and (min-width: 300px) {
-        .section-heading {
-            margin-bottom: 30px;
-        }
-    }
-
-
 
 .pager li > a {
    
     border-radius: 15px;
 
 }
-@media screen and (min-width: 300px) {
-    .pager li > a {
-        border-radius: 15px;
-    }
-}
+
  .pager li > a:hover, .pager li > a:focus  {
-    color: white;
+    color: green;
     background-color:transparent;
     border: 1px solid transparent;
 }
-@media screen and (min-width:300px) {
-    .pager li > a:hover, .pager li > a:focus  {
-        color: white;
-        background-color: transparent;
-        border: 1px solid transparent;
-    }
-}
+
 .pager li > a, .pager li > span 
 {
     background-color: transparent;
         border: 1px solid transparent;
-}
-@media screen and (min-width:300px) {
-    .pager li > a, .pager li > span {
-        background-color: transparent;
-        border: 1px solid transparent;
-    }
 }
 
 .modal-content
 {
     background-color:#7a7a52;
 }
+
 .container_Modal
 {
     background-color:#7a7a52;
 }
 
-.portfolio-modal .modal-content {
+.portfolio-modal .modal-content 
+{
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -293,58 +165,9 @@ a
   
     padding: 25px;
 }
-
-@media screen and (min-width:300px) {
-    h1{font-size:small;}
-
-}
-    .intro-header {
-        background-color: #777777;
-        background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
-        background-image: no-repeat;
-        background-attachment: scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        margin-bottom: 50px;
-    }
-
-/*@media screen and (min-width:600px) {
-    .intro-header {
-        background-color: #777777;
-        background-image: url('../Images/Filler_ExtraImages/MowingScape.PNG');
-        background-image: no-repeat;
-        background-attachment: scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        margin-bottom: 50px;
-    }
-}*/
-
-
-{
-    left: 19px;
-    top: 984px;
-    position: absolute;
-    height: 191px;
-    width: 286px;
-    z-index: 96;
-    display: block;
-    opacity: 1.0;
-}
-footer
- {
-    padding:0px;
-    margin:0px;
-}
+  
 section 
 {
     padding:50px;
 }
-.navbar-inverse {
-    background-color: black;
-    border-color: black;
-}
+*/

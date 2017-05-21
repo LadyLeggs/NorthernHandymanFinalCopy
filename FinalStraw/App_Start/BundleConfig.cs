@@ -28,6 +28,8 @@ namespace FinalStraw
                       "~/Content/4-col-portfolio.css",
                       "~/Content/agency.css", 
                       "~/Content/clean-blog.css",
+                       
+                       "~/Content/LayOut.css",
                       "~/Content/site.css"));
         }
     }
