@@ -59,14 +59,13 @@
  
 <!-- Jumbotron Page Content-->
     <div class="jumbotron" id="jumbotronHP">
-
-    <!--Row Paragraphs-->
+    <!--Row -->
         <div class="row">
             <div class="col-md-12">
                 <!--Lawn Care / Landscaping Colum-->
                 <div class="col-md-4 text-center">
                     <h3> Landscape & Lawn Care</h3>
-                    <!--Mowing Content-->
+                    <!--Content-->
                     <p class="HpServiceInfo">
                         Increase the value of your
                         property with a beautiful lawn. Keeping a well-manicured lawn around your home or
@@ -76,99 +75,101 @@
                         <br />
                         <br />
                     </p>
-                    <!--/Mowing Content-->
+                    <!--/Content-->
+
+                    <!--Image-->
+                        <img class="HpServiceImage" src="~/Images/TreeRemoval/TreeRemovalDuring2-4.jpg" />
+                    <!--Image-->
+                    <!--Spacing-->
+                        <br />
+                        <br />
+                    <!--/Spacing-->
+
+                    <!--Read More Button-->
+                        <a href='@Url.Action("Mowing_Index", "Home")'
+                            class="btn btn-success buttn1">
+                                Read More
+                        </a>
+                    <!--/Read More Button-->
+
                 </div>
-            </div>
-            <!--Tree Removal Image Colum-->
-            <div class="col-md-4 text-center">
-                <h3>Tree Removal & Stump Grinding / Removal </h3>
-                <!--Tree Service Info-->
-                <p class="HpServiceInfo">
-                    Sometimes a tree just has to be removed!
-                    Taking down the damaged or diseased ones helps your
-                    property stay safe. Once a tree is removed, the stump is left behind. On
-                    you'll want to grind the stump eight to twelve inches below ground level to allow for the
-                    planting of new grass, shrubs, or plants.
-                    Quick and affordable tree and stump removal is what we do.<br />
-                </p>
-                <!--/Tree Service Info-->
-                <!--Stump Grinding Colum-->
+                <!--/Lawn Care / Landscaping Colum-->
+
+                <!--Tree Removal & Stump Colum-->
+                <div class="col-md-4 text-center">
+                    <h3>Tree Removal & Stump Grinding / Removal </h3>
+                    <!--Content-->
+                    <p class="HpServiceInfo">
+                        Sometimes a tree just has to be removed!
+                        Taking down the damaged or diseased ones helps your
+                        property stay safe. Once a tree is removed, the stump is left behind. On
+                        you'll want to grind the stump eight to twelve inches below ground level to allow for the
+                        planting of new grass, shrubs, or plants.
+                        Quick and affordable tree and stump removal is what we do.<br />
+                    </p>
+                    <!--/Content-->
+
+                    <!--Image-->
+                        <img class="HpServiceImage" src="~/Images/Filler_ExtraImages/FullStumpRemoval.jpg">
+                    <!--/Image-->
+                    <!--Spacing-->
+                        <br />
+                        <br />
+                    <!--/Spacing-->
+                    <!--Read More Button-->
+                        <a href='@Url.Action("Tree_Removal_Index", "Home")'
+                            class="btn btn-success buttn1">
+                            Read More
+                        </a>
+                    <!--/Read More Button-->
+
+                </div>
+                <!--/Tree Removal & Stump Colum-->
+
+                <!--Winter Season Services Colum-->
                 <div class="col-md-4 text-center">
                     <h3> Winter Season Services </h3>
-                    <!--Stump Grinding / Removal Content-->
+                    <!--Content-->
                     <p class="HpServiceInfo">
 
                     </p>
-                    <!--/Stump Grinding / Removal Content-->
+                    <!--/Content-->
+                    <!--Image-->
+                        <img class="HpServiceImage" src="~/Images/Filler_ExtraImages/FullStumpRemoval.jpg">
+                    <!--/Image-->
+                    <!--Spacing-->
+                        <br />
+                        <br />
+                    <!--/Spacing-->
+                    <!--Read More Button-->
+                    <a href='@Url.Action("Stump_Grinding_Index", "Home")'
+                        class="btn btn-success buttn1">
+                            Read More
+                    </a>
+                    <!--/Read More Button-->
+
                 </div>
+                <!--Winter Season Services Colum-->
+
             </div>
         </div>
-                    <!--Row Images-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-4 text-center">
-                                <!--Mowing Image-->
-                                <img class="HpServiceImage" src="~/Images/Filler_ExtraImages/grass_mowing.png">
-                                <!--/Mowing Image-->
-                                <!--Spacing-->
-                                <br />
-                                <br />
-                            </div>
-                            <!--/Spacing-->
-                            <div class="col-md-4 text-center">
-                                <!--Image-->
-                                <img class="HpServiceImage" src="~/Images/TreeRemoval/TreeRemovalDuring2-4.jpg" />
-                                <!--Image-->
-                                <!--Spacing-->
-                                <br />
-                                <br />
-                                <!--/Spacing-->
-                            </div>
-                            <div class="col-md-4 text-center">
-                                <!--Image-->
-                                <img class="HpServiceImage" src="~/Images/Filler_ExtraImages/FullStumpRemoval.jpg">
-                                <!--/Image-->
-                                <!--Spacing-->
-                                <br />
-                                <br />
-                                <!--/Spacing-->
-                            </div>
-                        </div>
-                        </div>
-                            <!--Row Buttons-->
+    <!--/Row -->
 
+    <!--Row -->
+        <div class="row">
+            <!--Side Note * -->
+                <div class="col-lg-12 text-center">
+                    <!--Note Content -->
+                        <p class=" text-muted text-center ">
+                            *Feel free to contact us for any services listed on our Services page.
+                            We are <strong>Fully insured</strong> and our company strongly believes in being enviornmentally friendly.
+                        </p>
+                    <!--/Note Content -->
+                </div>
+            <!--/Side Note * -->
 
-                            <div class="row">
-                                <div class="col-md-12">                                
-                                    <!--Read More Button-->
-                                    <a href='@Url.Action("Mowing_Index", "Home")'
-                                       class="btn btn-success buttn1">
-                                        Read More
-                                    </a>
-                                    <!--/Read More Button-->
-                                                                
-                                    <!--Read More Button-->
-                                    <a href='@Url.Action("Tree_Removal_Index", "Home")'
-                                       class="btn btn-success buttn1">
-                                        Read More
-                                    </a>
-                                    <!--/Read More Button-->
-
-                                    <!--Read More Button-->
-                                    <a href='@Url.Action("Stump_Grinding_Index", "Home")'
-                                       class="btn btn-success buttn1">
-                                        Read More
-                                    </a>
-                                    <!--/Read More Button-->
-
-                          </div>
-                       </div>
-                        <div class="row">
-                            <!--Side Note * -->
-                            <div class="col-lg-12 text-center">
-                                <!--Note Content -->
-                                <p class=" text-muted text-center ">
-                                    *Feel free to contact us for any services listed on our Services page.
-                                    We are <strong>Fully insured</strong> and our company strongly believes in being enviornmentally friendly.
-                                </p>                              
-                            </div>
+        </div>
+    <!--/Row -->
+    
+</div>
+<!-- /Jumbotron Page Content-->
