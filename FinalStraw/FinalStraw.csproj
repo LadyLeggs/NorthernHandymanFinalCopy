@@ -273,6 +273,8 @@
     <Content Include="Images\Filler_ExtraImages\seasons.jpg" />
     <Content Include="Images\Filler_ExtraImages\Snow.PNG" />
     <Content Include="Images\Filler_ExtraImages\snow_forest.jpg" />
+    <Content Include="Images\Filler_ExtraImages\stormdamage2_edited.jpg" />
+    <Content Include="Images\Filler_ExtraImages\stormdamage_edited.jpg" />
     <Content Include="Images\Filler_ExtraImages\Untitled.png" />
     <Content Include="Images\Filler_ExtraImages\Untitled.Resized.png" />
     <Content Include="Images\Filler_ExtraImages\winter-seasons.jpg" />
@@ -282,14 +284,21 @@
     <Content Include="Images\LimbRemoval\LimbRemoval.jpg" />
     <Content Include="Images\LimbRemoval\LimbRemoval1.jpg" />
     <Content Include="Images\LimbRemoval\LimbRemovalCleanUp1.jpg" />
+    <Content Include="Images\LimbRemoval\LimbRemovalCleanUp1_edited.jpg" />
+    <Content Include="Images\LimbRemoval\LimbRemoval_Edited.jpg" />
+    <Content Include="Images\Mowing\edging.jpg" />
     <Content Include="Images\Mowing\LawnCare.PNG" />
     <Content Include="Images\Mowing\Mowing.jpg" />
+    <Content Include="Images\Mowing\Mulching.jpg" />
+    <Content Include="Images\Mowing\Planting.jpg" />
+    <Content Include="Images\Mowing\spring_cleanup.jpg" />
     <Content Include="Images\Projects\FirePit_1of1.png" />
     <Content Include="Images\Projects\FirePit_1of2.jpg" />
     <Content Include="Images\Projects\FirePit_2of2.jpg" />
     <Content Include="Images\Projects\RetainingWall_1of3.jpg" />
     <Content Include="Images\Projects\RetainingWall_2of3.jpg" />
     <Content Include="Images\Projects\RetainingWall_3of3.jpg" />
+    <Content Include="Images\Projects\stonewall.JPG" />
     <Content Include="Images\StumpGrinding\StumpGrinding1.jpg" />
     <Content Include="Images\StumpGrinding\StumpGrinding2.jpg" />
     <Content Include="Images\StumpGrinding\StumpGrinding3.jpg" />
@@ -302,6 +311,7 @@
     <Content Include="Images\StumpGrinding\StumpGrindingCleanup4.jpg" />
     <Content Include="Images\StumpGrinding\StumpGrindingCleanup5.jpg" />
     <Content Include="Images\StumpGrinding\StumpGrindingCleanup6.jpg" />
+    <Content Include="Images\StumpGrinding\StumpRemoval_edited.jpg" />
     <Content Include="Images\TreeRemoval\FullStumpRemoval.jpg" />
     <Content Include="Images\TreeRemoval\LargeTree.PNG" />
     <Content Include="Images\TreeRemoval\LargeTreeRemoval.jpg" />
@@ -309,6 +319,10 @@
     <Content Include="Images\TreeRemoval\TreeRemovalDuring2-4.jpg" />
     <Content Include="Images\TreeRemoval\TreeRemovalFinish4-4.jpg" />
     <Content Include="Images\TreeRemoval\TreeRemovalStart1-4.jpg" />
+    <Content Include="Images\TreeRemoval\Trimming_Boom_edited.jpg" />
+    <Content Include="Images\Trimming\Pruning#2.jpg" />
+    <Content Include="Images\Trimming\Pruning#3.jpg" />
+    <Content Include="Images\Trimming\pruning.jpg" />
     <Content Include="Images\Trimming\Trimming1.jpg" />
     <Content Include="Images\Trimming\Trimming2.jpg" />
     <Content Include="Images\Trimming\Trimming3.jpg" />
@@ -387,9 +401,9 @@
     <Content Include="Views\Home\AllPhotos.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
     <Content Include="Views\Images\FacebookAutoAdd.cshtml" />
-    <Content Include="Views\Home\Tree_Removal_Index.cshtml" />
-    <Content Include="Views\Home\Mowing_Index.cshtml" />
-    <Content Include="Views\Home\Stump_Grinding_Index.cshtml" />
+    <Content Include="Views\Home\Winter_Services_Index.cshtml" />
+    <Content Include="Views\Home\Landscape_Lawncare_Index.cshtml" />
+    <Content Include="Views\Home\Tree_Stump_Removal_Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

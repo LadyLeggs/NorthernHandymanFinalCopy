@@ -104,15 +104,15 @@ namespace FinalStraw.Controllers
         {
             return View();
         }
-        public ActionResult Tree_Removal_Index()
+        public ActionResult Tree_Stump_Removal_Index()
         {
             return View();
         }
-        public ActionResult Mowing_Index()
+        public ActionResult Landscape_Lawncare_Index()
         {
             return View();
         }
-        public ActionResult Stump_Grinding_Index()
+        public ActionResult Winter_Services_Index()
         {
             return View();
         }
