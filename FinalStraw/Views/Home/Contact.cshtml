@@ -1,33 +1,33 @@
-﻿@model TheNorthernHandyman.Models.ContactEmailModels
+﻿
+@model TheNorthernHandyman.Models.ContactEmailModels
 @Styles.Render("~/Content/Contact.css")
 
 @{
     ViewBag.Title = "Contact | TheNorthernHandyman";
 }
+
 <!-- Contact Section -->
-<section id="contact" >
+    <section id="contact" >
+        <!--Container-->
+            <div class="container">
 
-<!--Container-->
-    <div class="container">
+        <!--Row-->
+            <div class="row">
+                <!--Main HEADER-->
+                    <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>         
+                </div>
+                <!--/Main HEADER-->
 
-    <!--Row-->
-        <div class="row">
-
-        <!--Main HEADER-->
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>         
             </div>
-        <!--/Main HEADER-->
-
-        </div>
-    <!--/Row-->
+        <!--/Row-->
 
     <!--New Row / Contact Form-->
         <div class="row ">
             <div class="col-lg-4 col-md-4 col-sm-6">
                 @using (Html.BeginForm("Contact", "Home",
-    new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post,
-    new { @id = "contact-form", role = "form" }))
+                new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post,
+                new { @id = "contact-form", role = "form" }))
                 {
                     //@Html.ValidationSummary()
                     <field+set>
@@ -107,178 +107,196 @@
                         <div class="col-lg-12">
                             <form name="sentMessage" id="contactForm" novalidate></form>
                         </div>
+                <!--Buttons-->
                     <ul class="pager">
                         <li class="previous"><a id="ContactPager" href='@Url.Action("Services", "Home")'>&larr; Previous</a></li>
                         <li class="next"><a id="ContactPager" href='@Url.Action("Index", "Home")'>Home</a></li>
                     </ul>
+                <!--/Buttons-->
+
                     </div>
             <!--/Row-->
+
                     <br />
                     <br />
-            <!-- End Contact Section -->
+            
 
             <!---Availible Locations--->
-                    <div id="ContactLocation">
+                <div id="ContactLocation">
+                    <!--Row-->
                         <div class="row ">
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                            <!--Primary Location-->
-                                <strong class="Location">Primary Location: <br /></strong>
-                                <small class="Location">
-                                    - New London, WI <br />
-                                    - Three Lakes, WI<br />
-                                </small>
-                                <br />
-                                <strong class="Location"> We Also Serve The Fox Cities:<br /></strong>
-                                <small class="Location">
-                                    - Appleton, WI<br />
-                                    - Combined Locks, WI<br />
-                                    - Kaukauna, WI<br />
-                                    - Kimberly, WI<br />
-                                    - Little Chute, WI<br />
+                         <!--Primary Location-->
+                             <div class="col-lg-4 col-md-4 col-sm-6">                          
+                                 <strong class="Location">Primary Location: <br /></strong>
+                                 <small class="Location">
+                                 - New London, WI <br />
+                                 - Three Lakes, WI<br />
+                             </small>
+                                 <br />
+                                 <strong class="Location"> We Also Serve The Fox Cities:<br /></strong>
+                                 <small class="Location">
+                                     - Appleton, WI<br />
+                                     - Combined Locks, WI<br />
+                                     - Kaukauna, WI<br />
+                                     - Kimberly, WI<br />
+                                     - Little Chute, WI<br />
+                                     - Grand Chute, WI<br />
+                                     - Greenville, WI<br />
+                                 </small>
+                                 <br />
+                             
+                             </div>
+                         <!--/Primary Location-->
 
-                                    - Grand Chute, WI<br />
-                                    - Greenville, WI<br />
-                                </small>
-                                <br />
-                            <!--/Primary Location-->
-                            </div>
+                     <!--Local Towns-->
+                         <div class="col-lg-4 col-md-4 col-sm-6">
+                             <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
+                             <small class="Location">
+                                 - Northport, WI<br />
+                                 - Sugar Bush, WI<br />
+                                 - Royalton, WI<br />
+                                 - Hortonville, WI<br />
+                                 - Nowell, WI<br />
+                                 - North Readfield, WI<br />
+                                 - Stephensville, WI<br />
+                                 - Little Wolf, WI<br />
+                                 - Readfield, WI<br />
+                                 - Shiocton, WI <br />
+                                 - Dale, WI<br />
+                                 - Bear Creek, WI<br />
+                             </small>
+                             <br />                       
+                         </div>
+                     <!--/Local Towns-->
 
-                        <!--Local Towns-->
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
-                                <small class="Location">
-                                    - Northport, WI<br />
-                                    - Sugar Bush, WI<br />
-                                    - Royalton, WI<br />
-                                    - Hortonville, WI<br />
-                                    - Nowell, WI<br />
-                                    - North Readfield, WI<br />
-                                    - Stephensville, WI<br />
-                                    - Little Wolf, WI<br />
-                                    - Readfield, WI<br />
-                                    - Shiocton, WI <br />
-                                    - Dale, WI<br />
-                                    - Bear Creek, WI<br />
-                                </small>
-                                <br />
-                        <!--/Local Towns New London-->
-                            </div>
+                     <!--Local Towns Three Lakes-->
+                         <div class="col-lg-4 col-md-4 col-sm-6">
+                             <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
+                             <small class="Location">
+                                 -  Sugar Camp, WI<br />
+                                 -  Eagle River, WI<br />
+                                 -  Gagen, WI<br />
+                                 -  Starks, WI<br />
+                                 -  Hiles, WI<br />
+                                 -  Roosevelt, WI<br />
+                                 -  Newbold, WI<br />
+                             </small>
+                             <br />
+                         </div>
+                     <!--/Local Towns Three Lakes-->
 
-                        <!--Local Towns Three Lakes-->
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
-                                <small class="Location">
-                                    -  Sugar Camp, WI<br />
-                                    -  Eagle River, WI<br />
-                                    -  Gagen, WI<br />
-                                    -  Starks, WI<br />
-                                    -  Hiles, WI<br />
-                                    -  Roosevelt, WI<br />
-                                    -  Newbold, WI<br />
-                                </small>
-                                <br />
-                            </div>
-                    <!--/Local Towns Three Lakes-->
-                        </div>
+                     </div>
+                    <!--/Row-->
 
-                    <!--New Row-->
+                    <!--Row-->
                         <div class="row">
-                        <!--Within 25miles New London-->
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <strong class="Location">Within 25 miles of New London:</strong><br />
-                                <small class="Location">
-                                    - Black Creek, WI<br />
-                                    - Freedom, WI<br />
-                                    - Nichols, WI<br />
-                                    - Seymour, WI<br />
-                                    - Shiocton, WI<br />
-                                    - Bear Creek, WI<br />
-                                    - Big Falls, WI<br />
-                                    - Clintonville, WI<br />
-                                    - Dale, WI<br />
-                                    - Embarrass, WI<br />
-                                    - Fremont, WI<br />
-                                    - Hortonville, WI<br />
-                                    - Iola, WI<br />
-                                </small>
-                        <!--/Within 25miles New London-->
+                         <!--Within 25miles New London-->
+                             <div class="col-lg-4 col-md-4 col-sm-6">
+                             <strong class="Location">Within 25 miles of New London:</strong><br />
+                             <small class="Location">
+                                 - Black Creek, WI<br />
+                                 - Freedom, WI<br />
+                                 - Nichols, WI<br />
+                                 - Seymour, WI<br />
+                                 - Shiocton, WI<br />
+                                 - Bear Creek, WI<br />
+                                 - Big Falls, WI<br />
+                                 - Clintonville, WI<br />
+                                 - Dale, WI<br />
+                                 - Embarrass, WI<br />
+                                 - Fremont, WI<br />
+                                 - Hortonville, WI<br />
+                                 - Iola, WI<br />
+                             </small>
+                     <!--/Within 25miles New London-->
 
-                            </div>
-                        <!--Within 25miles Three Lakes-->
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <strong class="Location">
-                                    Within 25 Miles of Three Lakes:
-                                </strong><br />
-                                <small class="Location">
-                                    - Three Lakes WI<br />
-                                    - Eagle River, WI<br />
-                                    - Argonne Forest, WI<br />
-                                    - Phelps Vilas,	WI<br />
-                                    - Rhinelander, WI<br />
-                                    - Conover, WI<br />
-                                    - Long Lake, WI<br />
-                                    - Saint Germain, WI<br />
-                                    - Mc Naughton, WI<br />
-                                    - Lake Tomahawk,WI<br />
-                                    - Crandon Forest, WI<br />
-                                    - Star Lake, WI<br />
-                                    - Pelican Lake, WI<br />
-                                    - Sayner, WI<br />
-                                </small>
-                            </div>
-                            <br />
-                            <br />
-                            <br />                            
-                        <!--/Within 25 Miles of Three Lakes-->
+                         </div>
+                         <!--Within 25miles Three Lakes-->
 
-                        <!--Don't See Your City Listed?-->
-                            <div class="col-lg-3 col-md-4 col-sm-6 ">
-                                <strong> Don't See Your City Listed?<br /></strong>
-                                <small>
-                                    We are more than happy to travel to the outlying areas
-                                    for an additional fee to cover our travel costs.<br />
-                                    <br />
-                                </small>
-                                    <strong>Contact Us For Details.<br /></strong>                                
-                            <!--/Don't See Your City Listed?-->
+                         <!--Within 25 Miles of Three Lakes-->
+                             <div class="col-lg-4 col-md-4 col-sm-6">
+                             <strong class="Location">
+                                 Within 25 Miles of Three Lakes:
+                             </strong><br />
+                             <small class="Location">
+                                 - Three Lakes WI<br />
+                                 - Eagle River, WI<br />
+                                 - Argonne Forest, WI<br />
+                                 - Phelps Vilas,	WI<br />
+                                 - Rhinelander, WI<br />
+                                 - Conover, WI<br />
+                                 - Long Lake, WI<br />
+                                 - Saint Germain, WI<br />
+                                 - Mc Naughton, WI<br />
+                                 - Lake Tomahawk,WI<br />
+                                 - Crandon Forest, WI<br />
+                                 - Star Lake, WI<br />
+                                 - Pelican Lake, WI<br />
+                                 - Sayner, WI<br />
+                             </small>
+                         </div>
+                         <!--/Within 25 Miles of Three Lakes-->
 
-                            <!--Contact InFo-->
-                                <div class="col-lg-12 text-center">
-                                    <h3 class="section-subheading text-muted">
-                                        <span id="ContactIcons" class="glyphicon glyphicon-map-marker"></span>
-                                            <strong>Location :</strong><br />
-                                                N5043 Larry Rd.<br />
-                                                New London, WI 54961<br />
-                                        <span id="ContactIcons" class="glyphicon glyphicon-earphone"></span>
-                                            <abbr title="Phone"></abbr>
-                                        920.277.5947
-                                        <br />
-                                        <span id="ContactIcons" class="glyphicon glyphicon-envelope"></span> 
-                                            <strong>Email Me:</strong><br />
-                                        <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a><br />
-                                    </h3>
-                            <!--/Contact InFo -->
-                                </div>
-                            
-                            </div>
-                            <!--/New Row-->
-                        </div>
-                 <!--/#ContactLocation-->
+                             <br />
+                             <br />
+                             <br />                            
+                         
+                         <!--Don't See Your City Listed?-->
+                             <div class="col-lg-3 col-md-4 col-sm-6 ">
+                             <strong> Don't See Your City Listed?<br /></strong>
+                             <small>
+                                 We are more than happy to travel to the outlying areas
+                                 for an additional fee to cover our travel costs.<br />
+                                 <br />
+                             </small>
+                                 <strong>Contact Us For Details.<br /></strong>                                
+                             <div class="col-lg-12 text-center">
+                             <!--Contact InFo-->
+                                 <h3 class="section-subheading text-muted">
+                                     <span id="ContactIcons" class="glyphicon glyphicon-map-marker"></span>
+                                         <strong>Location :</strong><br />
+                                             N5043 Larry Rd.<br />
+                                             New London, WI 54961<br />
+                                     <span id="ContactIcons" class="glyphicon glyphicon-earphone"></span>
+                                         <abbr title="Phone"></abbr>
+                                     920.277.5947
+                                     <br />
+                                     <span id="ContactIcons" class="glyphicon glyphicon-envelope"></span> 
+                                         <strong>Email Me:</strong><br />
+                                     <a href="mailto:TheNorthernHandyman@gmail.com">TheNorthernHandyman@gmail.com</a><br />
+                                 </h3>
+                             <!--/Contact InFo -->
+                             </div>
+                        
+                         </div>
+                         <!--/Don't See Your City Listed?-->    
+                         
+                     </div>
+                    <!--/Row-->
 
-                    </div>
+                </div>
+            <!---/Availible Locations--->
 
         <!--Buttons-->
                     <ul class="pager">
-                        <li><a id="ContactPager"href='@Url.Action("Services", "Home")'>&larr; Previous</a></liid="ContactPager">
-                        <li><a id="ContactPager"href='@Url.Action("Index", "Home")'>Home</a></li>
+                        <!--Back Button-->
+                            <li id="ContactPager">
+                                <a id="ContactPager"href='@Url.Action("Services", "Home")'>&larr; Previous</a>
+                            </li>
+                        <!--/Back Button-->
+
+                        <!--Home Button-->
+                            <li>
+                                <a id="ContactPager"href='@Url.Action("Index", "Home")'>Home</a>
+                            </li>
+                        <!--/Home Button-->
                     </ul>
         <!--/Buttons-->
 
         <!--/Container-->
 
                 </div>
-
-<!--/Container-->
-
-</section>
+        <!--/Container-->  
+        
+    </section>
 <!-- /Contact Section -->

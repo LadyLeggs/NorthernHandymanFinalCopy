@@ -1,27 +1,31 @@
 ﻿
+@Styles.Render("~/Content/Site.css")
+
 @{
     ViewBag.Title = "Brush_Remvoal_Hogging";
 }
 
-<br />
-<br />
-<br />
-<body>
-      <!-- Page Content -->
+    <br />
+    <br />
+    <br />
+
+<!-- Page Content -->
     <div class="container">
         <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    <a href='@Url.Action("Photos", "Home")'> Albums</a>
-                    <small> | Brush Removal-Hogging | </small>
-                </h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        <a href='@Url.Action("Photos", "Home")'> Albums</a>
+                        <small> | Brush Removal-Hogging | </small>
+                    </h1>
+                </div>
             </div>
-        </div>
-        <!-- /.row -->
-        <!-- Projects Row -->
-        <div class="row">
+        <!-- /Page Heading-->
+
+<!-- Row -->
+    <div class="row">
        <div class="col-sm-3 col-xs-6 portfolio-item">
+           <!--Image-Hyper-Link-->
                 <a href="#portfolioModal1"
                    class="portfolio-link"
                    data-toggle="modal">
@@ -30,57 +34,81 @@
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-responsive" src="~/Images/Brush Remoal-Hogging/PileofBrush.jpg" 
-                    style="height: 210px; width: 280px" />
+                    <!--Image-->
+                        <img class="img-responsive" 
+                             src="~/Images/Brush Remoal-Hogging/PileofBrush.jpg"/>
+                    <!--/Image-->
                 </a>
-            </div>
-          </div>
+            <!--/Image-Hyper-Link-->
+        </div>
+    </div>
+<!-- /Row -->
         
  <hr />
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href='@Url.Action("Photos", "Home")'>Albums</a>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>                  
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-       </div>
-</body>
 
- <!-- Portfolio Modal 1 -->
-<div class="portfolio-modal modal fade"
-     id="portfolioModal1"
-     tabindex="-1"
-     role="dialog"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal"
-                 data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+        <!--Row-->
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <!--Buttons-->
+                        <ul class="pagination">
+                            <!--Album-Button-->
+                                <li>
+                                <a href='@Url.Action("Photos", "Home")'>Albums</a>                     
+                            </li>
+                            <!--/Album-Button-->
+
+                            <!--Page#Button-->
+                                <li class="active">
+                                <a href="#">1</a>
+                            </li>         
+                            <!--/Page#Button-->
+
+                            <!--NextButton-->
+                                <li>
+                                <a href='@Url.Action("Limb_Removal", "Home")'>&raquo;</a>
+                            </li>
+                            <!--/NextButton-->
+
+                        </ul>
+                    <!--/Buttons-->
+
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <img  class="img-responsive img-centered" src="~/Images/Brush Remoal-Hogging/PileofBrush.jpg" />
+        <!-- /Row -->
+    </div>
+<!-- /Page Content -->
+
+
+
+
+
+<!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade"
+         id="portfolioModal1"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal"
+                     data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <img  class="img-responsive img-centered" 
+                                     src="~/Images/Brush Remoal-Hogging/PileofBrush.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<!-- /Portfolio Modal 1 -->

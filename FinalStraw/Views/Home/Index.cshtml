@@ -1,181 +1,177 @@
 ﻿@Styles.Render("~/Content/Index.css")
 
 <!--Header Content--> 
-<header id="HomeHeader">  
-     <!--Container-->
-        <div class="container">
+    <header id="HomeHeader">  
+        <!--Container-->
+           <div class="container">
+                <!--Row-->
+                    <div class="row">           
+                       <br />
+                       <br />   
+                            <!--Main HEADER-->
+                               <h1>
+                                    The<br />
+                                    Northern Handyman
+                               </h1>
+                            <!--/Main HEADER-->
 
-        <!--Row-->
-            <div class="row">
-                
-        <!--Spacing Between Nav-bar and "The" -->
-            <br />
-            <br />
-        <!--/Spacing Between Nav-bar and "The" -->
+                                <hr class="small" />        
+                                    Snow | Tree Removal<br />
 
-        <!--Main HEADER-->
-            <h1>
-                The<br />
-                Northern Handyman
-            </h1>
-        <!--/Main HEADER-->
-
-            <hr class="small" />        
-            Snow | Tree Removal<br />
-                 <!--Sub-Title -->
-                     <small>
-                                Professional<br />
-                                Commercial<br />
-                                Residential<br />
-                                <br />
-                            </small>
-                 <!--/Sub-Title -->
+                            <!--Sub-Title -->
+                                <small>
+                                    Professional<br />
+                                    Commercial<br />
+                                    Residential<br />
+                                    <br />
+                                </small>
+                            <!--/Sub-Title -->
 
                     </div>
-        <!--/Row-->    
+                <!--/Row-->    
 
-<!--WhiteLine -->
             <hr />
-<!--/WhiteLine -->
 
-    <!--Discount Content-->
-            <div class="row col-lg-offset-2">
-                <p >
-                    <strong>*SPECIAL*</strong>
-                    Ask About our 10% Discount for Veterans and Senior Citizens! Or Our 20% for disabled.
-                </p>
+        <!--Discount Content-->
+                <div class="row col-lg-offset-2">
+                    <p >
+                        <strong>*SPECIAL*</strong>
+                        Ask About our 10% Discount for Veterans and Senior Citizens! Or Our 20% for disabled.
+                    </p>
+                </div>
+        <!--/Discount Content-->
+
+            <hr />
+    
             </div>
-    <!--/Discount Content-->
+        <!--/Container-->
 
-    <!--WhiteLine -->
-            <hr />
-    <!--/WhiteLine -->
-
-        </div>
-     <!--/Container-->
-
-</header id="HomeHeader">
+    </header id="HomeHeader">
 <!--/Header Content-->
  
 <!-- Jumbotron Page Content-->
     <div class="jumbotron" id="jumbotronHP">
-    <!--Row -->
-        <div class="row">
-            <div class="col-md-12">
-                <!--Lawn Care / Landscaping Colum-->
-                <div class="col-md-4 text-center">
-                    <h3> Landscape / <br /> Lawn Care</h3>
-                    <!--Content-->
-                    <p class="HpServiceInfo">
-                        Increase the value of your property with a beautiful lawn. 
-                        Keeping a well-manicured lawn around your home or
-                        business is great for curb appeal.  Our business will take
-                        care of mowing, trimming, and anything your lawn needs.
-                        Call today to see what we can do for you.
-                        <br />
-                        <br />
-                    </p>
-                    <!--/Content-->
+        <!--Row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!--Lawn Care / Landscaping Colum-->
+                        <div class="col-md-4 text-center">
+                            <h3> Landscape / <br /> Lawn Care</h3>
 
-                    <!--Image-->
-                        <img class="HpServiceImage" src="~/Images/TreeRemoval/TreeRemovalDuring2-4.jpg" />
-                    <!--Image-->
-                    <!--Spacing-->
-                        <br />
-                        <br />
-                    <!--/Spacing-->
+                                <!--Content-->
+                                    <p class="HpServiceInfo">
+                                        Increase the value of your property with a beautiful lawn. 
+                                        Keeping a well-manicured lawn around your home or
+                                        business is great for curb appeal.  Our business will take
+                                        care of mowing, trimming, and anything your lawn needs.
+                                        Call today to see what we can do for you.
+                                        <br />
+                                        <br />
+                                    </p>
+                                <!--/Content-->
 
-                    <!--Read More Button-->
-                        <a href='@Url.Action("Landscape_Lawncare_Index", "Home")'
-                            class="btn btn-success buttn1">
-                                Read More
-                        </a>
-                    <!--/Read More Button-->
+                                <!--Image-->
+                            <img class="HpServiceImage"
+                                src="~/Images/TreeRemoval/TreeRemovalDuring2-4_291x164.jpg" />
+                                <!--Image-->
+                                <!--Spacing-->
+                                    <br />
+                                    <br />
+                                <!--/Spacing-->
+
+                                <!--Read More Button-->
+                                    <a href='@Url.Action("Landscape_Lawncare_Index", "Home")'
+                                        class="btn btn-success buttn1"> Read More
+                                    </a>
+                                <!--/Read More Button-->
+
+                        </div>
+                    <!--/Lawn Care / Landscaping Colum-->
+
+                    <!--Tree Removal & Stump Colum-->
+                        <div class="col-md-4 text-center">
+                            <h3>Tree Removal / <br /> Stump Grinding </h3>
+                                <!--Content-->
+                                    <p class="HpServiceInfo">
+                                        Sometimes a tree just has to be removed!
+                                        Removing damaged or diseased trees prevents unexpected accidents.
+                                        Once a tree is removed, the stump is left behind.
+                                        Grinding the stump 8 to 12 inches below ground level allows for the
+                                        planting of new greenery.
+                                            <br />
+                                            <br />
+                                    </p>
+                                <!--/Content-->
+
+                                <!--Image-->
+                            <img class="HpServiceImage"
+                                 src="~/Images/StumpGrinding/FullStumpRemoval_291x164.jpg" />
+                                <!--/Image-->
+                                
+                                    <br />
+                                    <br />
+                               
+                                <!--Read More Button-->
+                                    <a href='@Url.Action("Tree_stump_Removal_Index", "Home")'
+                                        class="btn btn-success buttn1"> Read More
+                                    </a>
+                                <!--/Read More Button-->
+
+                        </div>
+                    <!--/Tree Removal & Stump Colum-->
+
+                    <!--Winter Season Services Colum-->
+                        <div class="col-md-4 text-center">
+                            <h3> Winter Season<br /> Services </h3>
+                                <!--Content-->
+                                    <p class="HpServiceInfo">
+                                        When the snow falls, you shouldn't have to wait to get it cleared. Our team is
+                                        here to clear your lots professionally and quickly with every snowfall.                    
+                                        With us, you can always expect a fast response. We'll get the snow 
+                                        out of your way!
+                                        <br />
+                                        <br />
+                                    </p>
+                                <!--/Content-->
+
+                                <!--Image-->
+                                    <img class="HpServiceImage" 
+                                         src="~/Images/Equipment/SnowBlower_291x164.png" />
+                                <!--/Image-->
+                                
+                                    <br />
+                                    <br />
+                           
+                                <!--Read More Button-->
+                                <a href='@Url.Action("Winter_Services_Index", "Home")'
+                                    class="btn btn-success buttn1"> Read More
+                                </a>
+                                <!--/Read More Button-->
+
+                        </div>
+                    <!--Winter Season Services Colum-->
 
                 </div>
-                <!--/Lawn Care / Landscaping Colum-->
+            </div>
+        <!--/Row -->
 
-                <!--Tree Removal & Stump Colum-->
-                <div class="col-md-4 text-center">
-                    <h3>Tree Removal / <br /> Stump Grinding </h3>
-                    <!--Content-->
-                    <p class="HpServiceInfo">
-                        Sometimes a tree just has to be removed!
-                        Removing damaged or diseased trees prevents unexpected accidents.
-                        Once a tree is removed, the stump is left behind.
-                        Grinding the stump 8 to 12 inches below ground level allows for the
-                        planting of new greenery.
-                        <br />
-                        <br />
-                    </p>
-                    <!--/Content-->
+        <!--Row -->
+            <div class="row">
+                <!--Side Note * -->
+                    <div class="col-lg-12 text-center">
+                        <!--Note Content -->
+                            <p class=" text-muted text-center ">
+                                *Feel free to contact us for any services listed on our Services page.
+                                We are <strong>Fully insured</strong> and our company strongly believes 
+                                in being enviornmentally friendly.
+                            </p>
+                        <!--/Note Content -->
 
-                    <!--Image-->
-                        <img class="HpServiceImage"  src="~/Images/TreeRemoval/FullStumpRemoval.jpg" />
-                    <!--/Image-->
-                    <!--Spacing-->
-                        <br />
-                        <br />
-                    <!--/Spacing-->
-                    <!--Read More Button-->
-                        <a href='@Url.Action("Index", "Home")'
-                            class="btn btn-success buttn1">
-                            Read More
-                        </a>
-                    <!--/Read More Button-->
-
-                </div>
-                <!--/Tree Removal & Stump Colum-->
-
-                <!--Winter Season Services Colum-->
-                <div class="col-md-4 text-center">
-                    <h3> Winter Season<br /> Services </h3>
-                    <!--Content-->
-                    <p class="HpServiceInfo">
-                        When the snow falls, you shouldn't have to wait to get it cleared. Our team is
-                        here to clear your lots professionally and quickly with every snowfall.                    
-                        With us, you can always expect a fast response. We'll get the snow 
-                        out of your way!
-                        <br />
-                        <br />
-                    </p>
-                    <!--/Content-->
-                    <!--Image-->
-                        <img class="HpServiceImage" src="~/Images/Equipment/SnowBlower.PNG" />
-                    <!--/Image-->
-                    <!--Spacing-->
-                        <br />
-                        <br />
-                    <!--/Spacing-->
-                    <!--Read More Button-->
-                    <a href='@Url.Action("Index", "Home")'
-                        class="btn btn-success buttn1">
-                            Read More
-                    </a>
-                    <!--/Read More Button-->
-
-                </div>
-                <!--Winter Season Services Colum-->
+                    </div>
+                <!--/Side Note * -->
 
             </div>
-        </div>
-    <!--/Row -->
-
-    <!--Row -->
-        <div class="row">
-            <!--Side Note * -->
-                <div class="col-lg-12 text-center">
-                    <!--Note Content -->
-                        <p class=" text-muted text-center ">
-                            *Feel free to contact us for any services listed on our Services page.
-                            We are <strong>Fully insured</strong> and our company strongly believes in being enviornmentally friendly.
-                        </p>
-                    <!--/Note Content -->
-                </div>
-            <!--/Side Note * -->
-
-        </div>
-    <!--/Row -->
+        <!--/Row -->
     
-</div>
+    </div>
 <!-- /Jumbotron Page Content-->
