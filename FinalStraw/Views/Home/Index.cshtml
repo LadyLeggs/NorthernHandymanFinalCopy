@@ -59,38 +59,58 @@
  
 <!-- Jumbotron Page Content-->
     <div class="jumbotron" id="jumbotronHP">
-
-    <!--Row Paragraphs-->
-        <div class="row">
-            <div class="col-md-12">
                 <!--Lawn Care / Landscaping Colum-->
-                <div class="col-md-4 text-center">
-                    <h3> Landscape & Lawn Care</h3>
-                    <!--Mowing Content-->
-                    <p class="HpServiceInfo">
-                        Increase the value of your
-                        property with a beautiful lawn. Keeping a well-manicured lawn around your home or
-                        business is great for curb appeal.  Our business will take
-                        care of mowing, trimming, and anything your lawn needs.
-                        Call today to see what we can do for you.
-                        <br />
-                        <br />
-                    </p>
-                    <!--/Mowing Content-->
-                </div>
-            </div>
-            <!--Tree Removal Image Colum-->
-            <div class="col-md-4 text-center">
-                <h3>Tree Removal & Stump Grinding / Removal </h3>
-                <!--Tree Service Info-->
-                <p class="HpServiceInfo">
-                    Sometimes a tree just has to be removed!
-                    Taking down the damaged or diseased ones helps your
-                    property stay safe. Once a tree is removed, the stump is left behind. On
-                    you'll want to grind the stump eight to twelve inches below ground level to allow for the
-                    planting of new grass, shrubs, or plants.
-                    Quick and affordable tree and stump removal is what we do.<br />
-                </p>
+                    <div class="col-md-4 text-center">
+                        <h3> Landscape & Lawn Care</h3>
+                            <!--Content-->
+                                <p class="HpServiceInfo">
+                                    Increase the value of your
+                                    property with a beautiful lawn. Keeping a well-manicured lawn around your home or
+                                    business is great for curb appeal.  Our business will take
+                                    care of mowing, trimming, and anything your lawn needs.
+                                    Call today to see what we can do for you.
+                                    <br />
+                                    <br />
+                                </p>
+                            <!--Content-->
+
+                            <!--Image-->
+                                <img class="HpServiceImage" src="~/Images/TreeRemoval/TreeRemovalDuring2-4.jpg" />
+                            <!--Image-->
+
+                            <!--Read More Button-->
+                                <a href='@Url.Action("Tree_Removal_Index", "Home")'
+                                class="btn btn-success buttn1">
+                                    Read More
+                            </a>
+                            <!--/Read More Button-->
+
+                    </div>
+                <!--/Lawn Care / Landscaping Colum-->
+                            
+                <!--Tree Removal Image Colum-->
+                    <div class="col-md-4 text-center">
+                        <h3>Tree Removal & Stump Grinding / Removal </h3>
+                            <!--Content-->
+                                <p class="HpServiceInfo">
+                                    Sometimes a tree just has to be removed!
+                                    Taking down the damaged or diseased ones helps your
+                                    property stay safe. Once a tree is removed, the stump is left behind. On
+                                    you'll want to grind the stump eight to twelve inches below ground level to allow for the
+                                    planting of new grass, shrubs, or plants.
+                                    Quick and affordable tree and stump removal is what we do.<br />
+                                </p>
+                            <!--/Content-->
+                            <!--Image-->
+                                <img class="HpServiceImage" src="~/Images/TreeRemoval/TreeRemovalDuring2-4.jpg" />
+                            <!--Image-->
+                            
+                            <!--Read More Button-->
+                                <a href='@Url.Action("Tree_Removal_Index", "Home")'
+                                    class="btn btn-success buttn1">
+                                        Read More
+                            </a>
+                            <!--/Read More Button-->
                 <!--/Tree Service Info-->
                 <!--Stump Grinding Colum-->
                 <div class="col-md-4 text-center">
@@ -107,9 +127,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="col-md-4 text-center">
-                                <!--Mowing Image-->
-                                <img class="HpServiceImage" src="~/Images/Filler_ExtraImages/grass_mowing.png">
-                                <!--/Mowing Image-->
+                              
                                 <!--Spacing-->
                                 <br />
                                 <br />
@@ -145,21 +163,9 @@
                                        class="btn btn-success buttn1">
                                         Read More
                                     </a>
-                                    <!--/Read More Button-->
-                                                                
-                                    <!--Read More Button-->
-                                    <a href='@Url.Action("Tree_Removal_Index", "Home")'
-                                       class="btn btn-success buttn1">
-                                        Read More
-                                    </a>
-                                    <!--/Read More Button-->
+                                 
 
-                                    <!--Read More Button-->
-                                    <a href='@Url.Action("Stump_Grinding_Index", "Home")'
-                                       class="btn btn-success buttn1">
-                                        Read More
-                                    </a>
-                                    <!--/Read More Button-->
+                                    
 
                           </div>
                        </div>
@@ -172,3 +178,102 @@
                                     We are <strong>Fully insured</strong> and our company strongly believes in being enviornmentally friendly.
                                 </p>                              
                             </div>
+
+
+
+
+@* Page Content *@
+    <div class="jumbotron content">
+	    <div class="row">
+            <div class="col-md-12">
+
+@* Tree Removal Image Colum *@
+                <div class="col-md-4 text-center">
+                    <h3>Tree Removal </h3>
+                        <p style="margin-top:20px;">
+                            Sometimes a tree just has to be removed!<br />
+                            It might be a safety issue or a landscaping project, 
+                            or even to get more sun on your yard.
+                        </p>                   
+           @* Image *@
+                    <img src="~/Images/TreeRemoval/TreeRemovalDuring2-4.jpg" 
+                         style="height: 310px; width: 380px">
+                    
+           @* Spacing *@
+                    <br />
+                    <br />
+
+           @* Button *@
+                    <a href='@Url.Action("Tree_Removal_Index", "Home")'
+                       class="btn btn-success buttn1">Read More</a>
+
+           @* END Tree Removal Content *@
+                </div>
+           
+
+           @* Mowing / Lawn Care Colum *@
+                <div class="col-md-4 text-center">
+                    <h3>Mowing / Lawn Care</h3>
+                        <p style="margin-top:20px;">
+                            Keeping a well-manicured lawn around your home or
+                            business is great for curb appeal. Let's impress your neighbors, shall we?
+                            <br />
+                            <br />
+                        </p>
+
+           @* Image *@
+                    <img src="~/Images/Filler_ExtraImages/grass_mowing.png" 
+                         style="height: 310px; width: 380px">
+           
+           @* Spacing *@      
+                    <br />
+                    <br />
+
+           @* Button *@
+                    <a href='@Url.Action("Mowing_Index", "Home")' 
+                       class="btn btn-success buttn1">Read More </a>
+
+           @* End Of Mowing/ Lawn Care *@
+                </div>
+           @* Stump Grinding Content *@
+                <div class="col-md-4 text-center">
+                    <h3>Stump Grinding / Removal </h3>
+                   <p style="margin-top:20px;">
+                        Once a tree is removed, the stump is left behind. In most cases, 
+                        you'll want to grind the stump eight to twelve inches below ground level to allow for the 
+                        planting of new grass, shrubs, or plants.
+                   </p>
+            @* Image *@
+                    <img src="~/Images/Filler_ExtraImages/FullStumpRemoval.jpg"  style="height: 310px; width: 380px">
+
+            @* Spacing *@ 
+                    <br />
+                    <br />
+
+            @* Button *@
+                    <a href='@Url.Action("Stump_Grinding_Index", "Home")' 
+                       class="btn btn-success buttn1">Read More </a>
+
+        @*End Of Stump Grinding Content*@
+                </div>
+            </div>
+        @* End of Row *@
+           </div>
+
+        @* Spacing *@
+            <br />
+
+     @* New Row *@
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p class=" text-muted text-center "
+                    style="font-size:small">
+                    *Feel free to contact us for any services listed on our Services page.
+                    We are <strong>Fully insured</strong> and our company strongly believes in being enviornmentally friendly.
+                </p>
+            </div>
+
+    @* End of Row *@
+        </div>
+   @* End Of Jumbotron *@
+</div>
