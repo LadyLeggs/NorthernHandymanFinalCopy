@@ -6,9 +6,8 @@
 <br />
 <br />
 <br />
-<body>
-   
-    <!-- Page Content -->
+
+<!-- Page Content -->
     <div class="container">
         <!-- Page Heading -->
         <div class="row">
@@ -22,77 +21,52 @@
         <!-- /.row -->
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/Trimming/Trimming_Boom.jpg" />
+            <div class="col-sm-3 col-xs-6 portfolio-item">
+                <a href="#portfolioModal1"
+                   class="portfolio-link"
+                   data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-responsive"
+                         src="~/Images/Trimming/Trimming_Boom_edited.jpg" />
                 </a>
             </div>
+
             <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/Trimming/Trimming_Boom2.jpg" />
+                <a href="#portfolioModal2"
+                   class="portfolio-link"
+                   data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-responsive"
+                         src="~/Images/Trimming/Trimming_Boom2_210x280.jpg" />
                 </a>
             </div>
-            @*<div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive"  src="~/Images/Trimming/Trimming1.jpg" />
-                </a>
-            </div>*@
+
             <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/Trimming/Trimming2.jpg" />
+                <a href="#portfolioModal3"
+                   class="portfolio-link"
+                   data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-responsive"
+                         src="~/Images/Trimming/Trimming2_210x280.jpg" />
                 </a>
             </div>
+            <br />
+
         </div>
-        <!-- /.row -->
-        <br />
-        <!-- Projects Row -->
-        @*<div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="~/Images/Trimming/Trimming3.jpg" />
-                </a>
-            </div>*@
-            @*<div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>*@
-        </div>
-        <!-- /.row -->
-        <!-- Projects Row -->
-        @*<div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-        </div>*@
-        <!-- /.row -->
+        
+        
         <hr>
         <!-- Pagination -->
         <div class="row text-center">
@@ -116,6 +90,96 @@
        
     </div>
     <!-- /.container -->
-    
-</body>
 
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal1"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered"
+                                 src="~/Images/Trimming/Trimming_Boom.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Portfolio Modal 1 -->
+
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal2"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered"
+                                 src="~/Images/Trimming/Trimming_Boom2.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Portfolio Modal 2 -->
+
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade"
+     id="portfolioModal3"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal"
+                 data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered"
+                                 src="~/Images/Trimming/Trimming2.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Portfolio Modal 3 -->
