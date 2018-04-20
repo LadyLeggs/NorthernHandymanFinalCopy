@@ -116,7 +116,7 @@ namespace FinalStraw.Controllers
         {
             return View();
         }
-        public ActionResult AllPhotosPg5()
+        public ActionResult LeafRemoval()
         {
             return View();
         }

@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/fb4ea361-5c69-42af-a427-b501b0663296/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/FinalStraw</ApplicationInsightsResourceId>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -291,6 +292,20 @@
     <Content Include="Images\Filler_ExtraImages\post-sample-image.jpg" />
     <Content Include="Images\Filler_ExtraImages\ReviewIcon.png" />
     <Content Include="Images\Filler_ExtraImages\seasons.jpg" />
+    <Content Include="Images\Leaf Removal\DuringLeafApart.jpeg" />
+    <Content Include="Images\Leaf Removal\DuringLeafApart2.jpeg" />
+    <Content Include="Images\Leaf Removal\DuringLeafApart3.jpeg" />
+    <Content Include="Images\Mowing\CleanUp.jpeg" />
+    <Content Include="Images\Mowing\Cleanup2.jpeg" />
+    <Content Include="Images\Mowing\CleanupAfter.jpeg" />
+    <Content Include="Images\Mowing\CleanupDuring.jpeg" />
+    <Content Include="Images\Leaf Removal\CoverPhoto.jpeg" />
+    <Content Include="Images\Projects\During1.jpeg" />
+    <Content Include="Images\Projects\During2.jpeg" />
+    <Content Include="Images\Projects\FrontPatioAfter.jpeg" />
+    <Content Include="Images\Projects\FrontViewBefore.jpeg" />
+    <Content Include="Images\Mowing\VeiwLeft.jpeg" />
+    <Content Include="Images\Mowing\VeiwRight.jpeg" />
     <Content Include="Images\SnowServices\Snow.PNG" />
     <Content Include="Images\Filler_ExtraImages\snow_forest.jpg" />
     <Content Include="Images\Filler_ExtraImages\stormdamage2_edited.jpg" />
@@ -374,6 +389,7 @@
     <Content Include="Images\TreeRemoval\TreeRemovalFinish4-4_210x280.jpg" />
     <Content Include="Images\TreeRemoval\TreeRemovalStart1-4.jpg" />
     <Content Include="Images\TreeRemoval\TreeRemovalStart1-4_210x280.jpg" />
+    <Content Include="Images\Trimming\Trimming2_210x280.jpg" />
     <Content Include="Images\Trimming\Trimming_Boom_edited.jpg" />
     <Content Include="Images\Trimming\Pruning#2.jpg" />
     <Content Include="Images\Trimming\Pruning#3.jpg" />
@@ -460,6 +476,7 @@
     <Content Include="Views\Home\Winter_Services_Index.cshtml" />
     <Content Include="Views\Home\Landscape_Lawncare_Index.cshtml" />
     <Content Include="Views\Home\Tree_Stump_Removal_Index.cshtml" />
+    <Content Include="Views\Home\LeafRemoval.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
